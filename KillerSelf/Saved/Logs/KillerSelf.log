@@ -1,858 +1,715 @@
-﻿[2016.03.26-14.37.01:664][  0]Log file open, 03/26/16 07:37:01
-[2016.03.26-14.37.01:664][  0]LogInit:Display: Running engine for game: KillerSelf
-[2016.03.26-14.37.01:664][  0]LogPlatformFile: Not using cached read wrapper
-[2016.03.26-14.37.01:664][  0]LogInit:Display: RandInit(939823018) SRandInit(939823019).
-[2016.03.26-14.37.01:664][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2016.03.26-14.37.01:664][  0]LogStats: Stats thread started at 0.069523
-[2016.03.26-14.37.01:664][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.03.26-14.37.01:664][  0]LogInit: API Version: 2758231
-[2016.03.26-14.37.01:664][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
-[2016.03.26-14.37.01:664][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.03.26-14.37.01:664][  0]LogInit: Build Configuration: Development
-[2016.03.26-14.37.01:664][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.03.26-14.37.01:664][  0]LogInit: Command line:  
-[2016.03.26-14.37.01:664][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.03.26-14.37.01:664][  0]LogInit: Rocket: 1
-[2016.03.26-14.37.01:669][  0]LogInit: Using libcurl 7.41.0
-[2016.03.26-14.37.01:669][  0]LogInit:  - built for x86_64-pc-win32
-[2016.03.26-14.37.01:669][  0]LogInit:  - supports SSL with WinSSL
-[2016.03.26-14.37.01:669][  0]LogInit:  - other features:
-[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_SSL
-[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_IPV6
-[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_IDN
-[2016.03.26-14.37.01:669][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.03.26-14.37.01:669][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.03.26-14.37.01:669][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.03.26-14.37.01:669][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.03.26-14.37.01:669][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.03.26-14.37.01:676][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.03.26-14.37.01:681][  0]LogInit: Object subsystem initialized
-[2016.03.26-14.37.01:682][  0]LogInit: Selected Device Profile: [Windows]
-[2016.03.26-14.37.01:682][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.03.26-14.37.01:689][  0]LogInit: Computer: WAXCHUGDAGWAD
-[2016.03.26-14.37.01:690][  0]LogInit: User: WaxChugdaGwad
-[2016.03.26-14.37.01:690][  0]LogInit: CPU Page size=4096, Cores=4
-[2016.03.26-14.37.01:690][  0]LogInit: High frequency timer resolution =3.415987 MHz
-[2016.03.26-14.37.01:690][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2016.03.26-14.37.01:690][  0]LogMemory: Platform Memory Stats for Windows
-[2016.03.26-14.37.01:690][  0]LogMemory: Process Physical Memory: 56.19 MB used, 56.19 MB peak
-[2016.03.26-14.37.01:690][  0]LogMemory: Process Virtual Memory: 56.82 MB used, 56.82 MB peak
-[2016.03.26-14.37.01:690][  0]LogMemory: Physical Memory: 3964.82 MB used, 8133.81 MB total
-[2016.03.26-14.37.01:690][  0]LogMemory: Virtual Memory: 382.47 MB used, 134217728.00 MB total
-[2016.03.26-14.37.01:720][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.03.26-14.37.02:118][  0]LogD3D11RHI: Found D3D11 adapter 0: AMD Radeon HD 7800 Series (Feature Level 11_0)
-[2016.03.26-14.37.02:119][  0]LogD3D11RHI: Adapter has 2026MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 1 output[s]
-[2016.03.26-14.37.02:119][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
-[2016.03.26-14.37.02:119][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 0 output[s]
-[2016.03.26-14.37.02:119][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.03.26-14.37.02:123][  0]LogD3D11RHI: !Direct3DDevice
-[2016.03.26-14.37.02:123][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.03.26-14.37.02:128][  0]LogD3D11RHI: Async texture creation disabled: no driver support
-[2016.03.26-14.37.02:139][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Intermediate/Shaders/WorkingDirectory/8108/).
-[2016.03.26-14.37.02:139][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/WAXCHU~1/AppData/Local/Temp/UnrealShaderWorkingDir/51A696784406FE927F5E628DB2EFB501/'.
-[2016.03.26-14.37.02:139][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.03.26-14.37.02:742][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.03.26-14.37.02:746][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.03.26-14.37.02:750][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.03.26-14.37.02:753][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.03.26-14.37.02:757][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.03.26-14.37.02:759][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.03.26-14.37.02:762][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.03.26-14.37.02:764][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.03.26-14.37.02:766][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.03.26-14.37.02:768][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.03.26-14.37.02:771][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.03.26-14.37.02:776][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.03.26-14.37.02:776][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.03.26-14.37.02:776][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.03.26-14.37.02:792][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.03.26-14.37.02:794][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.03.26-14.37.02:796][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.03.26-14.37.02:799][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.03.26-14.37.02:799][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.03.26-14.37.02:863][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: Loaded boot cache 0.04s 41MB C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.03.26-14.37.02:899][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.03.26-14.37.02:947][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.03.26-14.37.02:958][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.03.26-14.37.03:094][  0]LogInit: Selected Device Profile: [Windows]
-[2016.03.26-14.37.03:096][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.03.26-14.37.03:181][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.03.26-14.37.03:181][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.03.26-14.37.03:362][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.03.26-14.37.03:943][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.03.26-14.37.04:031][  0]LogAssetRegistry: FAssetRegistry took 0.0109 seconds to start up
-[2016.03.26-14.37.04:154][  0]SourceControl: Info Source control is disabled
-[2016.03.26-14.37.04:181][  0]SourceControl: Info Source control is disabled
-[2016.03.26-14.37.04:188][  0]SourceControl: Info Source control is disabled
-[2016.03.26-14.37.04:196][  0]SourceControl: Info Source control is disabled
-[2016.03.26-14.37.04:379][  0]LogObj: 28633 objects as part of root set at end of initial load.
-[2016.03.26-14.37.04:379][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
-[2016.03.26-14.37.04:427][  0]LogEngine: Initializing Engine...
-[2016.03.26-14.37.04:430][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.03.26-14.37.04:431][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.03.26-14.37.04:530][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.03.26-14.37.04:537][  0]LogInit: XAudio2 using 'SPDIF Interface (FiiO USB DAC-E10)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.03.26-14.37.04:543][  0]LogInit: FAudioDevice initialized.
-[2016.03.26-14.37.04:562][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.03.26-14.37.04:566][  0]LogInit: Texture streaming: Enabled
-[2016.03.26-14.37.04:571][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.03.26-14.37.04:571][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.03.26-14.37.04:571][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 280fe6a54b320313db23c5a31c94bb2f|69b82b21758b47ffb5f352be72a3bedd|1ba83f7c-15f5-490d-8e1f-18b6d5d9746f
-[2016.03.26-14.37.04:571][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.03.26-14.37.04:580][  0]LogInit: Transaction tracking system initialized
-[2016.03.26-14.37.04:605][  0]BlueprintLog: New page: Editor Load
-[2016.03.26-14.37.04:677][  0]LocalizationService: Info Localization service is disabled
-[2016.03.26-14.37.04:740][  0]LogConsoleResponse:Display: 
-[2016.03.26-14.37.04:821][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.03.26-14.37.04:866][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/' took 0.01s
-[2016.03.26-14.37.04:866][  0]SourceControl: Info Source control is disabled
-[2016.03.26-14.37.04:866][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.03.26-14.37.04:866][  0]LightingResults: New page: Lighting Build
-[2016.03.26-14.37.04:869][  0]MapCheck: New page: Map Check
-[2016.03.26-14.37.04:869][  0]LightingResults: New page: Lighting Build
-[2016.03.26-14.37.04:877][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFA8E77B00
-[2016.03.26-14.37.05:015][  0]LogLinker:Warning: Asset '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPerson/Meshes/FirstPersonProjectileMesh.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2016.03.26-14.37.05:206][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-14.37.05:206][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap.
-[2016.03.26-14.37.05:206][  0]LoadErrors:Error: Error /Game/FirstPersonBP/Maps/FirstPersonExampleMap : Can't find file for asset. /Game/FirstPersonBP/Blueprints/bodyMesh
-[2016.03.26-14.37.05:208][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-14.37.05:208][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap.
-[2016.03.26-14.37.05:208][  0]LoadErrors:Error: Error /Game/FirstPersonBP/Maps/FirstPersonExampleMap : Can't find file for asset. /Game/FirstPersonBP/Blueprints/bodyMesh
-[2016.03.26-14.37.05:209][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-14.37.05:209][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
-[2016.03.26-14.37.05:209][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-14.37.05:209][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
-[2016.03.26-14.37.05:218][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-14.37.05:218][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by FirstPersonCharacter_C_3
-[2016.03.26-14.37.05:218][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
-[2016.03.26-14.37.05:218][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by FirstPersonCharacter_C_3
-[2016.03.26-14.37.05:219][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-14.37.05:219][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by Player1
-[2016.03.26-14.37.05:219][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
-[2016.03.26-14.37.05:219][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by Player1
-[2016.03.26-14.37.05:377][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2016.03.26-14.37.05:384][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.03.26-14.37.05:384][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.03.26-14.37.05:422][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 38.348ms to complete.
-[2016.03.26-14.37.05:422][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.556
-[2016.03.26-14.37.05:531][  0]LogCollectionManager: Loaded 0 collections in 0.001792 seconds
-[2016.03.26-14.37.05:569][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/Collections/' took 0.01s
-[2016.03.26-14.37.05:569][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Developers/WaxChugdaGwad/Collections/' took 0.01s
-[2016.03.26-14.37.05:569][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Collections/' took 0.01s
-[2016.03.26-14.37.05:569][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2016.03.26-14.37.05:575][  0]LogContentBrowser: Native class hierarchy populated in 0.0057 seconds. Added 1893 classes and 338 folders.
-[2016.03.26-14.37.05:580][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2016.03.26-14.37.05:613][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2016.03.26-14.37.05:617][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2016.03.26-14.37.05:633][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.03.26-14.37.05:637][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.03.26-14.37.05:658][  0]LogLoad: Full Startup: 4.33 seconds (BP compile: 0.13 seconds)
-[2016.03.26-14.37.05:670][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
-[2016.03.26-14.37.05:670][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
-[2016.03.26-14.37.05:675][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.03.26-14.37.05:730][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.03.26-14.37.05:853][  0]LogRenderer: Reallocating scene render targets to support 1208x572 (Frame:2).
-[2016.03.26-14.37.06:087][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/' took 0.40s
-[2016.03.26-14.37.07:154][105]LogAssetRegistry: Asset discovery search completed in 3.1340 seconds
-[2016.03.26-14.37.07:154][105]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.03.26-14.37.07:154][105]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000018 seconds (updated 0 objects)
-[2016.03.26-14.37.08:687][285]AssetReimport: New page: Outstanding source content changes 12:37:08 AM
-[2016.03.26-14.37.54:047][ 78]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsMesh.fbx)
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: NodeAttribute, ItemCount : 11
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Model, ItemCount : 15
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Geometry, ItemCount : 4
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Material, ItemCount : 1
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: AnimationCurveNode, ItemCount : 9
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Pose, ItemCount : 4
-[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Deformer, ItemCount : 8
-[2016.03.26-14.37.54:123][ 78]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsMesh.fbx
-[2016.03.26-14.37.54:229][ 78]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.37.59:754][ 78]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsMesh.fbx
-[2016.03.26-14.37.59:857][ 78]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node START [nurbsToPoly1] 
-[2016.03.26-14.37.59:882][ 78]LogFbx: 	Total Deformer Count -691403616.
-[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:882][ 78]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly1 (Type Mesh).
-[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node END [nurbsToPoly1]
-[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node START [nurbsToPoly2] 
-[2016.03.26-14.37.59:882][ 78]LogFbx: 	Total Deformer Count -691403616.
-[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:882][ 78]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly2 (Type Mesh).
-[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node END [nurbsToPoly2]
-[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node START [nurbsToPoly3] 
-[2016.03.26-14.37.59:882][ 78]LogFbx: 	Total Deformer Count -691403616.
-[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:882][ 78]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly3 (Type Mesh).
-[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node END [nurbsToPoly3]
-[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node START [nurbsToPoly4] 
-[2016.03.26-14.37.59:882][ 78]LogFbx: 	Total Deformer Count -691403616.
-[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:882][ 78]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly4 (Type Mesh).
-[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly4]
-[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node START [nurbsToPoly1] 
-[2016.03.26-14.37.59:883][ 78]LogFbx: 	Total Deformer Count -691403616.
-[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:883][ 78]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly1 (Type Mesh).
-[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly1]
-[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node START [nurbsToPoly2] 
-[2016.03.26-14.37.59:883][ 78]LogFbx: 	Total Deformer Count -691403616.
-[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:883][ 78]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly2 (Type Mesh).
-[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly2]
-[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node START [nurbsToPoly3] 
-[2016.03.26-14.37.59:883][ 78]LogFbx: 	Total Deformer Count -691403616.
-[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:883][ 78]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly3 (Type Mesh).
-[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly3]
-[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node START [nurbsToPoly4] 
-[2016.03.26-14.37.59:883][ 78]LogFbx: 	Total Deformer Count -691403616.
-[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
-[2016.03.26-14.37.59:883][ 78]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly4 (Type Mesh).
-[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly4]
-[2016.03.26-14.37.59:886][ 78]LogFbx: Valid bind pose for Pose (skinCluster1) - nurbsToPoly1
-[2016.03.26-14.37.59:887][ 78]LogFbx: Valid bind pose for Pose (skinCluster2) - nurbsToPoly1
-[2016.03.26-14.37.59:887][ 78]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly1 : The relative matrices do not match
-[2016.03.26-14.37.59:887][ 78]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly2 : The relative matrices do not match
-[2016.03.26-14.37.59:887][ 78]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly3 : The relative matrices do not match
-[2016.03.26-14.37.59:887][ 78]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly4 : The relative matrices do not match
-[2016.03.26-14.37.59:887][ 78]LogFbx: Valid bind pose for Pose (skinCluster4) - nurbsToPoly1
-[2016.03.26-14.37.59:891][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/lambert1'
-[2016.03.26-14.37.59:891][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/lambert1'
-[2016.03.26-14.37.59:895][ 78]LogMaterial: Missing cached shader map for material lambert1, compiling. 
-[2016.03.26-14.37.59:927][ 78]LogFbx:Warning: Bones digested - 9  Depth of hierarchy - 6
-[2016.03.26-14.37.59:937][ 78]LogSkeletalMesh: Chunk 0: 1068 rigid vertices, 0 soft vertices, 4 active bones
-[2016.03.26-14.37.59:939][ 78]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 1680 triangles
-[2016.03.26-14.37.59:941][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsMesh_PhysicsAsset'
-[2016.03.26-14.37.59:941][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsMesh_PhysicsAsset'
-[2016.03.26-14.37.59:941][ 78]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/armsMesh_PhysicsAsset.armsMesh_PhysicsAsset'
-[2016.03.26-14.38.00:016][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsMesh_Skeleton'
-[2016.03.26-14.38.00:016][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsMesh_Skeleton'
-[2016.03.26-14.38.00:016][ 78]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/armsMesh_Skeleton.armsMesh_Skeleton'
-[2016.03.26-14.38.00:020][ 78]FBXImport:Warning: Warning The following bones are missing from the bind pose:
+﻿[2016.03.26-14.48.56:314][  0]Log file open, 03/26/16 07:48:56
+[2016.03.26-14.48.56:314][  0]LogInit:Display: Running engine for game: KillerSelf
+[2016.03.26-14.48.56:314][  0]LogPlatformFile: Not using cached read wrapper
+[2016.03.26-14.48.56:314][  0]LogInit:Display: RandInit(-913896016) SRandInit(-913896015).
+[2016.03.26-14.48.56:314][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.03.26-14.48.56:314][  0]LogStats: Stats thread started at 0.067659
+[2016.03.26-14.48.56:314][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.26-14.48.56:314][  0]LogInit: API Version: 2758231
+[2016.03.26-14.48.56:314][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2016.03.26-14.48.56:314][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.03.26-14.48.56:314][  0]LogInit: Build Configuration: Development
+[2016.03.26-14.48.56:314][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.03.26-14.48.56:314][  0]LogInit: Command line:  
+[2016.03.26-14.48.56:314][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.03.26-14.48.56:314][  0]LogInit: Rocket: 1
+[2016.03.26-14.48.56:320][  0]LogInit: Using libcurl 7.41.0
+[2016.03.26-14.48.56:320][  0]LogInit:  - built for x86_64-pc-win32
+[2016.03.26-14.48.56:320][  0]LogInit:  - supports SSL with WinSSL
+[2016.03.26-14.48.56:320][  0]LogInit:  - other features:
+[2016.03.26-14.48.56:320][  0]LogInit:      CURL_VERSION_SSL
+[2016.03.26-14.48.56:320][  0]LogInit:      CURL_VERSION_IPV6
+[2016.03.26-14.48.56:320][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.03.26-14.48.56:320][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.03.26-14.48.56:320][  0]LogInit:      CURL_VERSION_IDN
+[2016.03.26-14.48.56:320][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.03.26-14.48.56:320][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.03.26-14.48.56:320][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.03.26-14.48.56:320][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.03.26-14.48.56:320][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.03.26-14.48.56:326][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.03.26-14.48.56:331][  0]LogInit: Object subsystem initialized
+[2016.03.26-14.48.56:332][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.26-14.48.56:332][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.03.26-14.48.56:339][  0]LogInit: Computer: WAXCHUGDAGWAD
+[2016.03.26-14.48.56:339][  0]LogInit: User: WaxChugdaGwad
+[2016.03.26-14.48.56:339][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.03.26-14.48.56:339][  0]LogInit: High frequency timer resolution =3.415987 MHz
+[2016.03.26-14.48.56:339][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.03.26-14.48.56:339][  0]LogMemory: Platform Memory Stats for Windows
+[2016.03.26-14.48.56:339][  0]LogMemory: Process Physical Memory: 56.11 MB used, 56.11 MB peak
+[2016.03.26-14.48.56:339][  0]LogMemory: Process Virtual Memory: 56.77 MB used, 56.77 MB peak
+[2016.03.26-14.48.56:339][  0]LogMemory: Physical Memory: 3639.66 MB used, 8133.81 MB total
+[2016.03.26-14.48.56:339][  0]LogMemory: Virtual Memory: 382.47 MB used, 134217728.00 MB total
+[2016.03.26-14.48.56:370][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.03.26-14.48.56:759][  0]LogD3D11RHI: Found D3D11 adapter 0: AMD Radeon HD 7800 Series (Feature Level 11_0)
+[2016.03.26-14.48.56:759][  0]LogD3D11RHI: Adapter has 2026MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 1 output[s]
+[2016.03.26-14.48.56:760][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.03.26-14.48.56:760][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 0 output[s]
+[2016.03.26-14.48.56:760][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.03.26-14.48.56:763][  0]LogD3D11RHI: !Direct3DDevice
+[2016.03.26-14.48.56:763][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.03.26-14.48.56:769][  0]LogD3D11RHI: Async texture creation disabled: no driver support
+[2016.03.26-14.48.56:781][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Intermediate/Shaders/WorkingDirectory/3132/).
+[2016.03.26-14.48.56:781][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/WAXCHU~1/AppData/Local/Temp/UnrealShaderWorkingDir/E84013044538C060F746CD92FB89147F/'.
+[2016.03.26-14.48.56:781][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.03.26-14.48.57:374][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.03.26-14.48.57:378][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.03.26-14.48.57:382][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.03.26-14.48.57:385][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.03.26-14.48.57:389][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.03.26-14.48.57:392][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.03.26-14.48.57:393][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.03.26-14.48.57:396][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.03.26-14.48.57:399][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.03.26-14.48.57:401][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.03.26-14.48.57:404][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.03.26-14.48.57:409][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.03.26-14.48.57:409][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.03.26-14.48.57:409][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.03.26-14.48.57:425][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.03.26-14.48.57:427][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.03.26-14.48.57:429][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.03.26-14.48.57:431][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.03.26-14.48.57:431][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.03.26-14.48.57:493][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.03.26-14.48.57:529][  0]LogDerivedDataCache: Loaded boot cache 0.04s 41MB C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.26-14.48.57:529][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.03.26-14.48.57:529][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.03.26-14.48.57:529][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.03.26-14.48.57:529][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.03.26-14.48.57:529][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.03.26-14.48.57:577][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.03.26-14.48.57:588][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.03.26-14.48.57:720][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.26-14.48.57:721][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.03.26-14.48.57:804][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.03.26-14.48.57:804][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.03.26-14.48.57:997][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.03.26-14.48.58:547][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.03.26-14.48.58:634][  0]LogAssetRegistry: FAssetRegistry took 0.0110 seconds to start up
+[2016.03.26-14.48.58:753][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.48.58:781][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.48.58:789][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.48.58:796][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.48.58:966][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2016.03.26-14.48.58:966][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
+[2016.03.26-14.48.59:015][  0]LogEngine: Initializing Engine...
+[2016.03.26-14.48.59:017][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.26-14.48.59:017][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.03.26-14.48.59:107][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.03.26-14.48.59:114][  0]LogInit: XAudio2 using 'SPDIF Interface (FiiO USB DAC-E10)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.03.26-14.48.59:118][  0]LogInit: FAudioDevice initialized.
+[2016.03.26-14.48.59:136][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.26-14.48.59:140][  0]LogInit: Texture streaming: Enabled
+[2016.03.26-14.48.59:144][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.03.26-14.48.59:144][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.26-14.48.59:144][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 280fe6a54b320313db23c5a31c94bb2f|69b82b21758b47ffb5f352be72a3bedd|1ba83f7c-15f5-490d-8e1f-18b6d5d9746f
+[2016.03.26-14.48.59:144][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.03.26-14.48.59:151][  0]LogInit: Transaction tracking system initialized
+[2016.03.26-14.48.59:172][  0]BlueprintLog: New page: Editor Load
+[2016.03.26-14.48.59:242][  0]LocalizationService: Info Localization service is disabled
+[2016.03.26-14.48.59:299][  0]LogConsoleResponse:Display: 
+[2016.03.26-14.48.59:379][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.03.26-14.48.59:421][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/' took 0.01s
+[2016.03.26-14.48.59:421][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.48.59:421][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.26-14.48.59:422][  0]LightingResults: New page: Lighting Build
+[2016.03.26-14.48.59:424][  0]MapCheck: New page: Map Check
+[2016.03.26-14.48.59:424][  0]LightingResults: New page: Lighting Build
+[2016.03.26-14.48.59:432][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000026364177B00
+[2016.03.26-14.48.59:561][  0]LogLinker:Warning: Asset '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPerson/Meshes/FirstPersonProjectileMesh.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.03.26-14.48.59:870][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.26-14.48.59:881][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.26-14.48.59:882][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.26-14.48.59:922][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 39.909ms to complete.
+[2016.03.26-14.48.59:922][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.500
+[2016.03.26-14.49.00:023][  0]LogCollectionManager: Loaded 0 collections in 0.001774 seconds
+[2016.03.26-14.49.00:061][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/Collections/' took 0.01s
+[2016.03.26-14.49.00:061][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Developers/WaxChugdaGwad/Collections/' took 0.01s
+[2016.03.26-14.49.00:061][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Collections/' took 0.01s
+[2016.03.26-14.49.00:061][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2016.03.26-14.49.00:067][  0]LogContentBrowser: Native class hierarchy populated in 0.0054 seconds. Added 1893 classes and 338 folders.
+[2016.03.26-14.49.00:071][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2016.03.26-14.49.00:100][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2016.03.26-14.49.00:103][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2016.03.26-14.49.00:119][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.03.26-14.49.00:123][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.03.26-14.49.00:145][  0]LogLoad: Full Startup: 4.17 seconds (BP compile: 0.11 seconds)
+[2016.03.26-14.49.00:159][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.49.00:159][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.49.00:163][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.26-14.49.00:212][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.03.26-14.49.00:329][  0]LogRenderer: Reallocating scene render targets to support 1208x572 (Frame:2).
+[2016.03.26-14.49.00:547][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/' took 0.37s
+[2016.03.26-14.49.00:681][  4]LogAssetRegistry: Asset discovery search completed in 2.0576 seconds
+[2016.03.26-14.49.00:681][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.03.26-14.49.00:681][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000014 seconds (updated 0 objects)
+[2016.03.26-14.58.00:808][  6]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.03.26-14.58.33:826][369]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBase.fbx)
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: NodeAttribute, ItemCount : 11
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: Model, ItemCount : 15
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: Geometry, ItemCount : 4
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: Material, ItemCount : 1
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: AnimationCurveNode, ItemCount : 9
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: Pose, ItemCount : 4
+[2016.03.26-14.58.33:840][369]LogFbx: ItemName: Deformer, ItemCount : 8
+[2016.03.26-14.58.33:899][369]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBase.fbx
+[2016.03.26-14.58.33:997][369]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.58.43:374][369]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBase.fbx
+[2016.03.26-14.58.43:474][369]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.58.43:498][369]LogFbx: =================================================
+[2016.03.26-14.58.43:498][369]LogFbx: Dumping Node START [nurbsToPoly1] 
+[2016.03.26-14.58.43:498][369]LogFbx: 	Total Deformer Count 1953992112.
+[2016.03.26-14.58.43:498][369]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.58.43:498][369]LogFbx: =================================================
+[2016.03.26-14.58.43:498][369]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.58.43:498][369]LogFbx: 		[Node Attribute Child 1] nurbsToPoly1 (Type Mesh).
+[2016.03.26-14.58.43:498][369]LogFbx: Dumping Node END [nurbsToPoly1]
+[2016.03.26-14.58.43:498][369]LogFbx: =================================================
+[2016.03.26-14.58.43:498][369]LogFbx: Dumping Node START [nurbsToPoly2] 
+[2016.03.26-14.58.43:498][369]LogFbx: 	Total Deformer Count 1953992112.
+[2016.03.26-14.58.43:498][369]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.58.43:498][369]LogFbx: =================================================
+[2016.03.26-14.58.43:498][369]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.58.43:498][369]LogFbx: 		[Node Attribute Child 1] nurbsToPoly2 (Type Mesh).
+[2016.03.26-14.58.43:498][369]LogFbx: Dumping Node END [nurbsToPoly2]
+[2016.03.26-14.58.43:498][369]LogFbx: =================================================
+[2016.03.26-14.58.43:498][369]LogFbx: Dumping Node START [nurbsToPoly3] 
+[2016.03.26-14.58.43:498][369]LogFbx: 	Total Deformer Count 1953992112.
+[2016.03.26-14.58.43:498][369]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.58.43:498][369]LogFbx: =================================================
+[2016.03.26-14.58.43:498][369]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.58.43:498][369]LogFbx: 		[Node Attribute Child 1] nurbsToPoly3 (Type Mesh).
+[2016.03.26-14.58.43:498][369]LogFbx: Dumping Node END [nurbsToPoly3]
+[2016.03.26-14.58.43:498][369]LogFbx: =================================================
+[2016.03.26-14.58.43:498][369]LogFbx: Dumping Node START [nurbsToPoly4] 
+[2016.03.26-14.58.43:498][369]LogFbx: 	Total Deformer Count 1953992112.
+[2016.03.26-14.58.43:498][369]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.58.43:498][369]LogFbx: =================================================
+[2016.03.26-14.58.43:498][369]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.58.43:498][369]LogFbx: 		[Node Attribute Child 1] nurbsToPoly4 (Type Mesh).
+[2016.03.26-14.58.43:498][369]LogFbx: Dumping Node END [nurbsToPoly4]
+[2016.03.26-14.58.43:499][369]LogFbx: =================================================
+[2016.03.26-14.58.43:499][369]LogFbx: Dumping Node START [nurbsToPoly1] 
+[2016.03.26-14.58.43:499][369]LogFbx: 	Total Deformer Count 1953992112.
+[2016.03.26-14.58.43:499][369]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.58.43:499][369]LogFbx: =================================================
+[2016.03.26-14.58.43:499][369]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.58.43:499][369]LogFbx: 		[Node Attribute Child 1] nurbsToPoly1 (Type Mesh).
+[2016.03.26-14.58.43:499][369]LogFbx: Dumping Node END [nurbsToPoly1]
+[2016.03.26-14.58.43:499][369]LogFbx: =================================================
+[2016.03.26-14.58.43:499][369]LogFbx: Dumping Node START [nurbsToPoly2] 
+[2016.03.26-14.58.43:499][369]LogFbx: 	Total Deformer Count 1953992112.
+[2016.03.26-14.58.43:499][369]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.58.43:499][369]LogFbx: =================================================
+[2016.03.26-14.58.43:499][369]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.58.43:499][369]LogFbx: 		[Node Attribute Child 1] nurbsToPoly2 (Type Mesh).
+[2016.03.26-14.58.43:499][369]LogFbx: Dumping Node END [nurbsToPoly2]
+[2016.03.26-14.58.43:499][369]LogFbx: =================================================
+[2016.03.26-14.58.43:499][369]LogFbx: Dumping Node START [nurbsToPoly3] 
+[2016.03.26-14.58.43:499][369]LogFbx: 	Total Deformer Count 1953992112.
+[2016.03.26-14.58.43:499][369]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.58.43:499][369]LogFbx: =================================================
+[2016.03.26-14.58.43:499][369]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.58.43:499][369]LogFbx: 		[Node Attribute Child 1] nurbsToPoly3 (Type Mesh).
+[2016.03.26-14.58.43:499][369]LogFbx: Dumping Node END [nurbsToPoly3]
+[2016.03.26-14.58.43:499][369]LogFbx: =================================================
+[2016.03.26-14.58.43:499][369]LogFbx: Dumping Node START [nurbsToPoly4] 
+[2016.03.26-14.58.43:499][369]LogFbx: 	Total Deformer Count 1953992112.
+[2016.03.26-14.58.43:499][369]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.58.43:499][369]LogFbx: =================================================
+[2016.03.26-14.58.43:499][369]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.58.43:499][369]LogFbx: 		[Node Attribute Child 1] nurbsToPoly4 (Type Mesh).
+[2016.03.26-14.58.43:499][369]LogFbx: Dumping Node END [nurbsToPoly4]
+[2016.03.26-14.58.43:501][369]LogFbx: Valid bind pose for Pose (skinCluster1) - nurbsToPoly1
+[2016.03.26-14.58.43:501][369]LogFbx: Valid bind pose for Pose (skinCluster2) - nurbsToPoly1
+[2016.03.26-14.58.43:502][369]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly1 : The relative matrices do not match
+[2016.03.26-14.58.43:502][369]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly2 : The relative matrices do not match
+[2016.03.26-14.58.43:502][369]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly3 : The relative matrices do not match
+[2016.03.26-14.58.43:502][369]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly4 : The relative matrices do not match
+[2016.03.26-14.58.43:502][369]LogFbx: Valid bind pose for Pose (skinCluster4) - nurbsToPoly1
+[2016.03.26-14.58.43:504][369]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/lambert3'
+[2016.03.26-14.58.43:504][369]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/lambert3'
+[2016.03.26-14.58.43:508][369]LogMaterial: Missing cached shader map for material lambert3, compiling. 
+[2016.03.26-14.58.43:542][369]LogFbx:Warning: Bones digested - 9  Depth of hierarchy - 6
+[2016.03.26-14.58.43:552][369]LogSkeletalMesh: Chunk 0: 1068 rigid vertices, 0 soft vertices, 4 active bones
+[2016.03.26-14.58.43:553][369]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 1680 triangles
+[2016.03.26-14.58.43:554][369]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBase_PhysicsAsset'
+[2016.03.26-14.58.43:554][369]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBase_PhysicsAsset'
+[2016.03.26-14.58.43:554][369]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowBase_PhysicsAsset.yellowBase_PhysicsAsset'
+[2016.03.26-14.58.43:629][369]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBase_Skeleton'
+[2016.03.26-14.58.43:629][369]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBase_Skeleton'
+[2016.03.26-14.58.43:629][369]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowBase_Skeleton.yellowBase_Skeleton'
+[2016.03.26-14.58.43:633][369]FBXImport:Warning: Warning The following bones are missing from the bind pose:
 joint11  
 joint21  
 joint22  
 
 This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
 please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
-[2016.03.26-14.38.00:021][ 78]FBXImport:Warning: Warning The bone size is too small to create Physics Asset 'armsMesh_PhysicsAsset' from Skeletal Mesh 'armsMesh'. You will have to create physics asset manually. 
-[2016.03.26-14.38.00:049][ 79]LogMaterial:Warning: Material /Game/Assets/Characters/Kappa/lambert1.lambert1 needed to have new flag set bUsedWithSkeletalMesh !
-[2016.03.26-14.38.00:064][ 79]LogMaterial: Missing cached shader map for material lambert1, compiling. 
-[2016.03.26-14.38.00:073][ 79]LogMaterial: 0.000031 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
-[2016.03.26-14.38.17:027][ 77]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsIdleAnim.fbx)
-[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: NodeAttribute, ItemCount : 9
-[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: Model, ItemCount : 9
-[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: AnimationCurveNode, ItemCount : 37
-[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: AnimationCurve, ItemCount : 70
-[2016.03.26-14.38.17:095][ 77]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsIdleAnim.fbx
-[2016.03.26-14.38.17:206][ 77]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.38.22:132][ 77]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsIdleAnim.fbx
-[2016.03.26-14.38.22:245][ 77]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(0) joint1
-[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(1) joint2
-[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(2) joint3
-[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(3) joint9
-[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(4) joint10
-[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(5) joint11
-[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(6) joint12
-[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(7) joint21
-[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(8) joint22
-[2016.03.26-14.38.22:273][ 77]LogFbx: Parsing AnimStack Take 001
-[2016.03.26-14.38.22:375][ 77]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsIdleAnim'
-[2016.03.26-14.38.22:376][ 77]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsIdleAnim'
-[2016.03.26-14.38.22:376][ 77]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/armsIdleAnim.armsIdleAnim'
-[2016.03.26-14.38.31:760][308]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsThrow.fbx)
-[2016.03.26-14.38.31:770][308]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.38.31:770][308]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.38.31:770][308]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.38.31:770][308]LogFbx: ItemName: NodeAttribute, ItemCount : 9
-[2016.03.26-14.38.31:770][308]LogFbx: ItemName: Model, ItemCount : 9
-[2016.03.26-14.38.31:770][308]LogFbx: ItemName: AnimationCurveNode, ItemCount : 25
-[2016.03.26-14.38.31:770][308]LogFbx: ItemName: AnimationCurve, ItemCount : 40
-[2016.03.26-14.38.31:827][308]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsThrow.fbx
-[2016.03.26-14.38.31:927][308]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.38.36:109][308]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsThrow.fbx
-[2016.03.26-14.38.36:206][308]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(0) joint1
-[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(1) joint2
-[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(2) joint3
-[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(3) joint9
-[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(4) joint10
-[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(5) joint11
-[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(6) joint12
-[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(7) joint21
-[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(8) joint22
-[2016.03.26-14.38.36:231][308]LogFbx: Parsing AnimStack Take 001
-[2016.03.26-14.38.36:256][308]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsThrow'
-[2016.03.26-14.38.36:256][308]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsThrow'
-[2016.03.26-14.38.36:256][308]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/armsThrow.armsThrow'
-[2016.03.26-14.38.41:640][493]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
-[2016.03.26-14.38.50:861][895]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMesh.fbx)
-[2016.03.26-14.38.50:869][895]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.38.50:869][895]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.38.50:869][895]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.38.50:869][895]LogFbx: ItemName: NodeAttribute, ItemCount : 9
-[2016.03.26-14.38.50:869][895]LogFbx: ItemName: Model, ItemCount : 10
-[2016.03.26-14.38.50:869][895]LogFbx: ItemName: Geometry, ItemCount : 1
-[2016.03.26-14.38.50:869][895]LogFbx: ItemName: Material, ItemCount : 1
-[2016.03.26-14.38.50:869][895]LogFbx: ItemName: AnimationCurveNode, ItemCount : 7
-[2016.03.26-14.38.50:870][895]LogFbx: ItemName: Pose, ItemCount : 1
-[2016.03.26-14.38.50:870][895]LogFbx: ItemName: Deformer, ItemCount : 5
-[2016.03.26-14.38.50:929][895]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMesh.fbx
-[2016.03.26-14.38.51:023][895]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.38.56:195][895]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMesh.fbx
-[2016.03.26-14.38.56:289][895]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.38.56:313][895]LogFbx: =================================================
-[2016.03.26-14.38.56:313][895]LogFbx: Dumping Node START [nurbsToPoly6] 
-[2016.03.26-14.38.56:313][895]LogFbx: 	Total Deformer Count -1738302768.
-[2016.03.26-14.38.56:313][895]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.38.56:313][895]LogFbx: =================================================
-[2016.03.26-14.38.56:313][895]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.38.56:313][895]LogFbx: 		[Node Attribute Child 1] nurbsToPoly6 (Type Mesh).
-[2016.03.26-14.38.56:313][895]LogFbx: Dumping Node END [nurbsToPoly6]
-[2016.03.26-14.38.56:313][895]LogFbx: =================================================
-[2016.03.26-14.38.56:313][895]LogFbx: Dumping Node START [nurbsToPoly6] 
-[2016.03.26-14.38.56:313][895]LogFbx: 	Total Deformer Count -1738302768.
-[2016.03.26-14.38.56:313][895]LogFbx: 		[Node 1]  (Type Skin).
-[2016.03.26-14.38.56:313][895]LogFbx: =================================================
-[2016.03.26-14.38.56:313][895]LogFbx: 	Attribute () Type (4).
-[2016.03.26-14.38.56:313][895]LogFbx: 		[Node Attribute Child 1] nurbsToPoly6 (Type Mesh).
-[2016.03.26-14.38.56:313][895]LogFbx: Dumping Node END [nurbsToPoly6]
-[2016.03.26-14.38.56:315][895]LogFbx:Warning: Not valid bind pose for Pose (skinCluster1) - Node nurbsToPoly6 : The relative matrices do not match
-[2016.03.26-14.38.56:315][895]LogFbx:Warning: Getting valid bind pose failed. Try to recreate bind pose
-[2016.03.26-14.38.56:316][895]LogFbx: Valid bind pose for Pose (FbxSDKBindPose) - nurbsToPoly6
-[2016.03.26-14.38.56:316][895]LogFbx:Warning: Recreating bind pose succeeded.
-[2016.03.26-14.38.56:328][895]LogFbx:Warning: Bones digested - 7  Depth of hierarchy - 3
-[2016.03.26-14.38.56:335][895]LogSkeletalMesh: Chunk 0: 833 rigid vertices, 0 soft vertices, 4 active bones
-[2016.03.26-14.38.56:336][895]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 1320 triangles
-[2016.03.26-14.38.56:337][895]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMesh_PhysicsAsset'
-[2016.03.26-14.38.56:337][895]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMesh_PhysicsAsset'
-[2016.03.26-14.38.56:337][895]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyMesh_PhysicsAsset.bodyMesh_PhysicsAsset'
-[2016.03.26-14.38.56:339][895]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMesh_Skeleton'
-[2016.03.26-14.38.56:339][895]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMesh_Skeleton'
-[2016.03.26-14.38.56:339][895]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyMesh_Skeleton.bodyMesh_Skeleton'
-[2016.03.26-14.38.56:342][895]FBXImport:Warning: Warning The following bones are missing from the bind pose:
+[2016.03.26-14.58.43:633][369]FBXImport:Warning: Warning The bone size is too small to create Physics Asset 'yellowBase_PhysicsAsset' from Skeletal Mesh 'yellowBase'. You will have to create physics asset manually. 
+[2016.03.26-14.58.43:659][370]LogMaterial:Warning: Material /Game/Assets/Characters/PogChamp/lambert3.lambert3 needed to have new flag set bUsedWithSkeletalMesh !
+[2016.03.26-14.58.43:675][370]LogMaterial: Missing cached shader map for material lambert3, compiling. 
+[2016.03.26-14.58.43:683][370]LogMaterial: 0.000029 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-14.59.16:797][932]LogSavePackage: Save=1542.235962ms
+[2016.03.26-14.59.16:797][932]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/FirstPersonExampleMap_Auto124F695B145D0F1F07E0B4D9EBD86E60D.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto1.umap'
+[2016.03.26-14.59.16:798][932]LogSavePackage: Total save time: 1561.844938ms
+[2016.03.26-14.59.16:798][932]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto1.umap
+[2016.03.26-14.59.16:799][932]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 1.579
+[2016.03.26-14.59.16:799][932]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.579
+[2016.03.26-14.59.16:803][932]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Characters/PogChamp/lambert3] ([1] browsable assets)...
+[2016.03.26-14.59.16:833][932]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Assets/Characters/PogChamp/lambert3.lambert3]
+[2016.03.26-14.59.16:833][932]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Characters/PogChamp/lambert3]
+[2016.03.26-14.59.16:845][932]LogSavePackage: Save=10.580544ms
+[2016.03.26-14.59.16:845][932]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/lambert3_Auto1A87A58E24405CFBA0BB09DB48BDDFCD9.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/Autosaves/Game/Assets/Characters/PogChamp/lambert3_Auto1.uasset'
+[2016.03.26-14.59.16:846][932]LogSavePackage: Total save time: 11.470474ms
+[2016.03.26-14.59.16:846][932]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/Autosaves/Game/Assets/Characters/PogChamp/lambert3_Auto1.uasset
+[2016.03.26-14.59.16:846][932]LogFileHelpers: Auto-saving content packages took 0.046
+[2016.03.26-15.01.09:296][310]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\pogChampHead.png)
+[2016.03.26-15.01.09:320][310]LogTexture:Display: Building textures: pogChampHead (BGRA8)
+[2016.03.26-15.01.15:295][328]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowArmsMesh.fbx)
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: NodeAttribute, ItemCount : 11
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: Model, ItemCount : 15
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: Geometry, ItemCount : 4
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: Material, ItemCount : 1
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: AnimationCurveNode, ItemCount : 9
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: Pose, ItemCount : 4
+[2016.03.26-15.01.15:305][328]LogFbx: ItemName: Deformer, ItemCount : 8
+[2016.03.26-15.01.15:363][328]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowArmsMesh.fbx
+[2016.03.26-15.01.15:464][328]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.01.20:452][328]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowArmsMesh.fbx
+[2016.03.26-15.01.20:554][328]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node START [nurbsToPoly1] 
+[2016.03.26-15.01.20:578][328]LogFbx: 	Total Deformer Count 1420335744.
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node Attribute Child 1] nurbsToPoly1 (Type Mesh).
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node END [nurbsToPoly1]
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node START [nurbsToPoly2] 
+[2016.03.26-15.01.20:578][328]LogFbx: 	Total Deformer Count 1420335744.
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node Attribute Child 1] nurbsToPoly2 (Type Mesh).
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node END [nurbsToPoly2]
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node START [nurbsToPoly3] 
+[2016.03.26-15.01.20:578][328]LogFbx: 	Total Deformer Count 1420335744.
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node Attribute Child 1] nurbsToPoly3 (Type Mesh).
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node END [nurbsToPoly3]
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node START [nurbsToPoly4] 
+[2016.03.26-15.01.20:578][328]LogFbx: 	Total Deformer Count 1420335744.
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node Attribute Child 1] nurbsToPoly4 (Type Mesh).
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node END [nurbsToPoly4]
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node START [nurbsToPoly1] 
+[2016.03.26-15.01.20:578][328]LogFbx: 	Total Deformer Count 1420335744.
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node Attribute Child 1] nurbsToPoly1 (Type Mesh).
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node END [nurbsToPoly1]
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node START [nurbsToPoly2] 
+[2016.03.26-15.01.20:578][328]LogFbx: 	Total Deformer Count 1420335744.
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.20:578][328]LogFbx: =================================================
+[2016.03.26-15.01.20:578][328]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.20:578][328]LogFbx: 		[Node Attribute Child 1] nurbsToPoly2 (Type Mesh).
+[2016.03.26-15.01.20:578][328]LogFbx: Dumping Node END [nurbsToPoly2]
+[2016.03.26-15.01.20:579][328]LogFbx: =================================================
+[2016.03.26-15.01.20:579][328]LogFbx: Dumping Node START [nurbsToPoly3] 
+[2016.03.26-15.01.20:579][328]LogFbx: 	Total Deformer Count 1420335744.
+[2016.03.26-15.01.20:579][328]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.20:579][328]LogFbx: =================================================
+[2016.03.26-15.01.20:579][328]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.20:579][328]LogFbx: 		[Node Attribute Child 1] nurbsToPoly3 (Type Mesh).
+[2016.03.26-15.01.20:579][328]LogFbx: Dumping Node END [nurbsToPoly3]
+[2016.03.26-15.01.20:579][328]LogFbx: =================================================
+[2016.03.26-15.01.20:579][328]LogFbx: Dumping Node START [nurbsToPoly4] 
+[2016.03.26-15.01.20:579][328]LogFbx: 	Total Deformer Count 1420335744.
+[2016.03.26-15.01.20:579][328]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.20:579][328]LogFbx: =================================================
+[2016.03.26-15.01.20:579][328]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.20:579][328]LogFbx: 		[Node Attribute Child 1] nurbsToPoly4 (Type Mesh).
+[2016.03.26-15.01.20:579][328]LogFbx: Dumping Node END [nurbsToPoly4]
+[2016.03.26-15.01.20:580][328]LogFbx: Valid bind pose for Pose (skinCluster1) - nurbsToPoly1
+[2016.03.26-15.01.20:581][328]LogFbx: Valid bind pose for Pose (skinCluster2) - nurbsToPoly1
+[2016.03.26-15.01.20:581][328]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly1 : The relative matrices do not match
+[2016.03.26-15.01.20:581][328]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly2 : The relative matrices do not match
+[2016.03.26-15.01.20:581][328]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly3 : The relative matrices do not match
+[2016.03.26-15.01.20:582][328]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly4 : The relative matrices do not match
+[2016.03.26-15.01.20:582][328]LogFbx: Valid bind pose for Pose (skinCluster4) - nurbsToPoly1
+[2016.03.26-15.01.20:583][328]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/lambert1'
+[2016.03.26-15.01.20:583][328]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/lambert1'
+[2016.03.26-15.01.20:586][328]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2016.03.26-15.01.20:613][328]LogFbx:Warning: Bones digested - 9  Depth of hierarchy - 6
+[2016.03.26-15.01.20:622][328]LogSkeletalMesh: Chunk 0: 1068 rigid vertices, 0 soft vertices, 4 active bones
+[2016.03.26-15.01.20:623][328]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 1680 triangles
+[2016.03.26-15.01.20:624][328]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowArmsMesh_PhysicsAsset'
+[2016.03.26-15.01.20:624][328]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowArmsMesh_PhysicsAsset'
+[2016.03.26-15.01.20:625][328]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowArmsMesh_PhysicsAsset.yellowArmsMesh_PhysicsAsset'
+[2016.03.26-15.01.20:683][328]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowArmsMesh_Skeleton'
+[2016.03.26-15.01.20:683][328]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowArmsMesh_Skeleton'
+[2016.03.26-15.01.20:683][328]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowArmsMesh_Skeleton.yellowArmsMesh_Skeleton'
+[2016.03.26-15.01.20:687][328]FBXImport:Warning: Warning The following bones are missing from the bind pose:
+joint11  
+joint21  
+joint22  
+
+This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
+please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
+[2016.03.26-15.01.20:687][328]FBXImport:Warning: Warning The bone size is too small to create Physics Asset 'yellowArmsMesh_PhysicsAsset' from Skeletal Mesh 'yellowArmsMesh'. You will have to create physics asset manually. 
+[2016.03.26-15.01.20:713][329]LogMaterial:Warning: Material /Game/Assets/Characters/PogChamp/lambert1.lambert1 needed to have new flag set bUsedWithSkeletalMesh !
+[2016.03.26-15.01.20:729][329]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2016.03.26-15.01.20:737][329]LogMaterial: 0.000027 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-15.01.25:878][787]LogRenderer: Reallocating scene render targets to support 1208x792 (Frame:65299).
+[2016.03.26-15.01.33:346][322]LogSavePackage: Save=1063.458984ms
+[2016.03.26-15.01.33:346][322]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/FirstPersonExampleMap6359731E4A572A3427E3879921B61129.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2016.03.26-15.01.33:351][322]LogSavePackage: Total save time: 1069.913324ms
+[2016.03.26-15.01.33:351][322]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
+[2016.03.26-15.01.33:373][322]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 1.143
+[2016.03.26-15.01.33:403][322]LogSavePackage: Save=11.017021ms
+[2016.03.26-15.01.33:403][322]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowArmsMeshB296667942B15D6C9FA2CB9C07D4D785.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowArmsMesh.uasset'
+[2016.03.26-15.01.33:405][322]LogSavePackage: Total save time: 12.661934ms
+[2016.03.26-15.01.33:405][322]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowArmsMesh.uasset
+[2016.03.26-15.01.33:434][322]LogSavePackage: Save=10.728964ms
+[2016.03.26-15.01.33:434][322]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/lambert38311C1F4431990266B586D92FBFBEFBC.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/lambert3.uasset'
+[2016.03.26-15.01.33:436][322]LogSavePackage: Total save time: 12.767904ms
+[2016.03.26-15.01.33:436][322]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/lambert3.uasset
+[2016.03.26-15.01.33:518][322]LogSavePackage: Save=71.218361ms
+[2016.03.26-15.01.33:518][322]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/pogChampHeadA95DA03B4A73552EB34F9AAA0E6A19B4.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/pogChampHead.uasset'
+[2016.03.26-15.01.33:523][322]LogSavePackage: Total save time: 76.152224ms
+[2016.03.26-15.01.33:523][322]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/pogChampHead.uasset
+[2016.03.26-15.01.33:553][322]LogSavePackage: Save=11.205839ms
+[2016.03.26-15.01.33:553][322]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/lambert1353059D7485EF889F75EB1B4A398D7AF.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/lambert1.uasset'
+[2016.03.26-15.01.33:555][322]LogSavePackage: Total save time: 12.883537ms
+[2016.03.26-15.01.33:555][322]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/lambert1.uasset
+[2016.03.26-15.01.33:568][322]LogSavePackage: Save=5.698207ms
+[2016.03.26-15.01.33:568][322]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowArmsMesh_SkeletonABE49B814CEE4A712329E7913D454B61.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowArmsMesh_Skeleton.uasset'
+[2016.03.26-15.01.33:571][322]LogSavePackage: Total save time: 8.591659ms
+[2016.03.26-15.01.33:571][322]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowArmsMesh_Skeleton.uasset
+[2016.03.26-15.01.48:997][ 29]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBodyMesh.fbx)
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: NodeAttribute, ItemCount : 9
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: Model, ItemCount : 10
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: Material, ItemCount : 1
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: AnimationCurveNode, ItemCount : 7
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: Pose, ItemCount : 1
+[2016.03.26-15.01.49:004][ 29]LogFbx: ItemName: Deformer, ItemCount : 5
+[2016.03.26-15.01.49:062][ 29]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBodyMesh.fbx
+[2016.03.26-15.01.49:150][ 29]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.01.56:759][ 29]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBodyMesh.fbx
+[2016.03.26-15.01.56:849][ 29]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.01.56:871][ 29]LogFbx: =================================================
+[2016.03.26-15.01.56:871][ 29]LogFbx: Dumping Node START [nurbsToPoly6] 
+[2016.03.26-15.01.56:871][ 29]LogFbx: 	Total Deformer Count 506324656.
+[2016.03.26-15.01.56:871][ 29]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.56:871][ 29]LogFbx: =================================================
+[2016.03.26-15.01.56:871][ 29]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.56:871][ 29]LogFbx: 		[Node Attribute Child 1] nurbsToPoly6 (Type Mesh).
+[2016.03.26-15.01.56:871][ 29]LogFbx: Dumping Node END [nurbsToPoly6]
+[2016.03.26-15.01.56:871][ 29]LogFbx: =================================================
+[2016.03.26-15.01.56:871][ 29]LogFbx: Dumping Node START [nurbsToPoly6] 
+[2016.03.26-15.01.56:871][ 29]LogFbx: 	Total Deformer Count 506324656.
+[2016.03.26-15.01.56:871][ 29]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-15.01.56:871][ 29]LogFbx: =================================================
+[2016.03.26-15.01.56:871][ 29]LogFbx: 	Attribute () Type (4).
+[2016.03.26-15.01.56:871][ 29]LogFbx: 		[Node Attribute Child 1] nurbsToPoly6 (Type Mesh).
+[2016.03.26-15.01.56:871][ 29]LogFbx: Dumping Node END [nurbsToPoly6]
+[2016.03.26-15.01.56:873][ 29]LogFbx:Warning: Not valid bind pose for Pose (skinCluster1) - Node nurbsToPoly6 : The relative matrices do not match
+[2016.03.26-15.01.56:873][ 29]LogFbx:Warning: Getting valid bind pose failed. Try to recreate bind pose
+[2016.03.26-15.01.56:874][ 29]LogFbx: Valid bind pose for Pose (FbxSDKBindPose) - nurbsToPoly6
+[2016.03.26-15.01.56:874][ 29]LogFbx:Warning: Recreating bind pose succeeded.
+[2016.03.26-15.01.56:886][ 29]LogFbx:Warning: Bones digested - 7  Depth of hierarchy - 3
+[2016.03.26-15.01.56:892][ 29]LogSkeletalMesh: Chunk 0: 833 rigid vertices, 0 soft vertices, 4 active bones
+[2016.03.26-15.01.56:893][ 29]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 1320 triangles
+[2016.03.26-15.01.56:895][ 29]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyMesh_PhysicsAsset'
+[2016.03.26-15.01.56:895][ 29]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyMesh_PhysicsAsset'
+[2016.03.26-15.01.56:895][ 29]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowBodyMesh_PhysicsAsset.yellowBodyMesh_PhysicsAsset'
+[2016.03.26-15.01.56:897][ 29]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyMesh_Skeleton'
+[2016.03.26-15.01.56:897][ 29]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyMesh_Skeleton'
+[2016.03.26-15.01.56:897][ 29]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowBodyMesh_Skeleton.yellowBodyMesh_Skeleton'
+[2016.03.26-15.01.56:900][ 29]FBXImport:Warning: Warning The following bones are missing from the bind pose:
 joint3  
 joint20  
 joint19  
 
 This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
 please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
-[2016.03.26-14.39.08:647][200]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyDeathAnim.fbx)
-[2016.03.26-14.39.08:654][200]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.39.08:654][200]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.39.08:654][200]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.39.08:654][200]LogFbx: ItemName: NodeAttribute, ItemCount : 7
-[2016.03.26-14.39.08:654][200]LogFbx: ItemName: Model, ItemCount : 7
-[2016.03.26-14.39.08:654][200]LogFbx: ItemName: AnimationCurveNode, ItemCount : 19
-[2016.03.26-14.39.08:654][200]LogFbx: ItemName: AnimationCurve, ItemCount : 30
-[2016.03.26-14.39.08:712][200]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyDeathAnim.fbx
-[2016.03.26-14.39.08:796][200]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.39.24:239][200]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyDeathAnim.fbx
-[2016.03.26-14.39.24:326][200]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(0) joint1
-[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(1) joint2
-[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(2) joint3
-[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(3) joint7
-[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(4) joint20
-[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(5) joint18
-[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(6) joint19
-[2016.03.26-14.39.24:351][200]LogFbx: Parsing AnimStack Take 001
-[2016.03.26-14.39.24:363][200]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyDeathAnim'
-[2016.03.26-14.39.24:363][200]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyDeathAnim'
-[2016.03.26-14.39.24:363][200]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyDeathAnim.bodyDeathAnim'
-[2016.03.26-14.39.30:694][313]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyFallingAnim.fbx)
-[2016.03.26-14.39.30:703][313]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.39.30:703][313]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.39.30:703][313]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.39.30:703][313]LogFbx: ItemName: NodeAttribute, ItemCount : 7
-[2016.03.26-14.39.30:703][313]LogFbx: ItemName: Model, ItemCount : 7
-[2016.03.26-14.39.30:703][313]LogFbx: ItemName: AnimationCurveNode, ItemCount : 23
-[2016.03.26-14.39.30:703][313]LogFbx: ItemName: AnimationCurve, ItemCount : 40
-[2016.03.26-14.39.30:762][313]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyFallingAnim.fbx
-[2016.03.26-14.39.30:853][313]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.39.40:217][313]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyFallingAnim.fbx
-[2016.03.26-14.39.40:307][313]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(0) joint1
-[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(1) joint2
-[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(2) joint3
-[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(3) joint7
-[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(4) joint20
-[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(5) joint18
-[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(6) joint19
-[2016.03.26-14.39.40:332][313]LogFbx: Parsing AnimStack Take 001
-[2016.03.26-14.39.40:349][313]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyFallingAnim'
-[2016.03.26-14.39.40:349][313]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyFallingAnim'
-[2016.03.26-14.39.40:349][313]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyFallingAnim.bodyFallingAnim'
-[2016.03.26-14.39.49:814][531]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyIdleAnim.fbx)
-[2016.03.26-14.39.49:822][531]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.39.49:822][531]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.39.49:822][531]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.39.49:822][531]LogFbx: ItemName: NodeAttribute, ItemCount : 7
-[2016.03.26-14.39.49:822][531]LogFbx: ItemName: Model, ItemCount : 7
-[2016.03.26-14.39.49:822][531]LogFbx: ItemName: AnimationCurveNode, ItemCount : 27
-[2016.03.26-14.39.49:822][531]LogFbx: ItemName: AnimationCurve, ItemCount : 50
-[2016.03.26-14.39.49:882][531]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyIdleAnim.fbx
-[2016.03.26-14.39.49:979][531]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.39.54:062][531]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyIdleAnim.fbx
-[2016.03.26-14.39.54:161][531]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(0) joint1
-[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(1) joint2
-[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(2) joint3
-[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(3) joint7
-[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(4) joint20
-[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(5) joint18
-[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(6) joint19
-[2016.03.26-14.39.54:185][531]LogFbx: Parsing AnimStack Take 001
-[2016.03.26-14.39.54:256][531]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyIdleAnim'
-[2016.03.26-14.39.54:256][531]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyIdleAnim'
-[2016.03.26-14.39.54:257][531]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyIdleAnim.bodyIdleAnim'
-[2016.03.26-14.40.07:998][ 48]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyJumpAnim.fbx)
-[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: NodeAttribute, ItemCount : 7
-[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: Model, ItemCount : 7
-[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: AnimationCurveNode, ItemCount : 23
-[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: AnimationCurve, ItemCount : 40
-[2016.03.26-14.40.08:066][ 48]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyJumpAnim.fbx
-[2016.03.26-14.40.08:156][ 48]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.40.13:123][ 48]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyJumpAnim.fbx
-[2016.03.26-14.40.13:214][ 48]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(0) joint1
-[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(1) joint2
-[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(2) joint3
-[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(3) joint7
-[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(4) joint20
-[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(5) joint18
-[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(6) joint19
-[2016.03.26-14.40.13:238][ 48]LogFbx: Parsing AnimStack Take 001
-[2016.03.26-14.40.13:250][ 48]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyJumpAnim'
-[2016.03.26-14.40.13:250][ 48]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyJumpAnim'
-[2016.03.26-14.40.13:250][ 48]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyJumpAnim.bodyJumpAnim'
-[2016.03.26-14.40.26:632][813]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMoveAnim.fbx)
-[2016.03.26-14.40.26:640][813]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.40.26:640][813]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.40.26:640][813]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.40.26:640][813]LogFbx: ItemName: NodeAttribute, ItemCount : 7
-[2016.03.26-14.40.26:640][813]LogFbx: ItemName: Model, ItemCount : 7
-[2016.03.26-14.40.26:640][813]LogFbx: ItemName: AnimationCurveNode, ItemCount : 23
-[2016.03.26-14.40.26:640][813]LogFbx: ItemName: AnimationCurve, ItemCount : 40
-[2016.03.26-14.40.26:698][813]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMoveAnim.fbx
-[2016.03.26-14.40.26:795][813]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.40.33:547][813]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMoveAnim.fbx
-[2016.03.26-14.40.33:641][813]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(0) joint1
-[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(1) joint2
-[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(2) joint3
-[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(3) joint7
-[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(4) joint20
-[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(5) joint18
-[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(6) joint19
-[2016.03.26-14.40.33:665][813]LogFbx: Parsing AnimStack Take 001
-[2016.03.26-14.40.33:682][813]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMoveAnim'
-[2016.03.26-14.40.33:682][813]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMoveAnim'
-[2016.03.26-14.40.33:682][813]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyMoveAnim.bodyMoveAnim'
-[2016.03.26-14.40.42:713][ 50]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/kappaHead.png)
-[2016.03.26-14.40.42:738][ 50]LogTexture:Display: Building textures: kappaHead (BGRA8)
-[2016.03.26-14.40.48:844][217]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9A7D18A0
-[2016.03.26-14.40.48:845][217]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9D0B1E40
-[2016.03.26-14.40.48:845][217]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFD6705940
-[2016.03.26-14.40.48:851][217]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFD6705580
-[2016.03.26-14.40.50:491][217]LogSavePackage: Save=1558.377686ms
-[2016.03.26-14.40.50:491][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/FirstPersonExampleMapD64C1F1644FE024C28245A82DC3ECF68.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
-[2016.03.26-14.40.50:495][217]LogSavePackage: Total save time: 1578.377787ms
-[2016.03.26-14.40.50:495][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
-[2016.03.26-14.40.50:656][217]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 1.793
-[2016.03.26-14.40.50:688][217]LogSavePackage: Save=11.651977ms
-[2016.03.26-14.40.50:688][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/armsIdleAnimB7615CDE43E8C25DB0C29AAD54826421.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsIdleAnim.uasset'
-[2016.03.26-14.40.50:690][217]LogSavePackage: Total save time: 13.458189ms
-[2016.03.26-14.40.50:690][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsIdleAnim.uasset
-[2016.03.26-14.40.50:720][217]LogSavePackage: Save=11.023169ms
-[2016.03.26-14.40.50:720][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/armsMesh95A9D33443749E7273E3E58A8EABB366.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsMesh.uasset'
-[2016.03.26-14.40.50:722][217]LogSavePackage: Total save time: 13.082895ms
-[2016.03.26-14.40.50:722][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsMesh.uasset
-[2016.03.26-14.40.50:752][217]LogSavePackage: Save=11.563861ms
-[2016.03.26-14.40.50:752][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/lambert1FC0CF13848FC4BF52CEE259D89292200.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/lambert1.uasset'
-[2016.03.26-14.40.50:754][217]LogSavePackage: Total save time: 13.112169ms
-[2016.03.26-14.40.50:754][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/lambert1.uasset
-[2016.03.26-14.40.50:762][217]LogSavePackage: Save=2.983618ms
-[2016.03.26-14.40.50:762][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/armsMesh_SkeletonCAA98B704EA0A2FD4D4C528CBAC32F97.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsMesh_Skeleton.uasset'
-[2016.03.26-14.40.50:763][217]LogSavePackage: Total save time: 4.615944ms
-[2016.03.26-14.40.50:763][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsMesh_Skeleton.uasset
-[2016.03.26-14.40.50:791][217]LogSavePackage: Save=10.147579ms
-[2016.03.26-14.40.50:791][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/armsThrowA51EAE3B45600B3B1D49579E4E755A0F.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsThrow.uasset'
-[2016.03.26-14.40.50:792][217]LogSavePackage: Total save time: 11.691790ms
-[2016.03.26-14.40.50:792][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsThrow.uasset
-[2016.03.26-14.40.50:821][217]LogSavePackage: Save=11.158122ms
-[2016.03.26-14.40.50:821][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyMeshAB694D734F2050FCDB1B3EBA15EF8B79.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh.uasset'
-[2016.03.26-14.40.50:822][217]LogSavePackage: Total save time: 12.799229ms
-[2016.03.26-14.40.50:822][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh.uasset
-[2016.03.26-14.40.50:831][217]LogSavePackage: Save=3.720155ms
-[2016.03.26-14.40.50:831][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyMesh_PhysicsAsset9B9EAC264C7706D6D324B8BE44412328.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh_PhysicsAsset.uasset'
-[2016.03.26-14.40.50:832][217]LogSavePackage: Total save time: 5.257338ms
-[2016.03.26-14.40.50:832][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh_PhysicsAsset.uasset
-[2016.03.26-14.40.50:840][217]LogSavePackage: Save=3.123255ms
-[2016.03.26-14.40.50:840][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyMesh_Skeleton337C8DBD46F2B5C9C9498B8B771921D6.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh_Skeleton.uasset'
-[2016.03.26-14.40.50:841][217]LogSavePackage: Total save time: 4.752066ms
-[2016.03.26-14.40.50:841][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh_Skeleton.uasset
-[2016.03.26-14.40.50:856][217]LogSavePackage: Save=6.391710ms
-[2016.03.26-14.40.50:856][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyDeathAnimB35B651744FED4C71546E8B83D4FE226.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyDeathAnim.uasset'
-[2016.03.26-14.40.50:860][217]LogSavePackage: Total save time: 9.729546ms
-[2016.03.26-14.40.50:860][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyDeathAnim.uasset
-[2016.03.26-14.40.50:920][217]LogSavePackage: Save=44.912056ms
-[2016.03.26-14.40.50:920][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyFallingAnim726E815049360396749676AA825C45A3.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyFallingAnim.uasset'
-[2016.03.26-14.40.50:926][217]LogSavePackage: Total save time: 51.126949ms
-[2016.03.26-14.40.50:926][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyFallingAnim.uasset
-[2016.03.26-14.40.50:940][217]LogSavePackage: Save=6.102190ms
-[2016.03.26-14.40.50:941][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyIdleAnimF70068FD468603A4B6AD12949C93EFFA.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyIdleAnim.uasset'
-[2016.03.26-14.40.50:942][217]LogSavePackage: Total save time: 7.607173ms
-[2016.03.26-14.40.50:942][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyIdleAnim.uasset
-[2016.03.26-14.40.50:966][217]LogSavePackage: Save=6.099848ms
-[2016.03.26-14.40.50:966][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyJumpAnim456756F14D2850068EFA13A79D91454A.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyJumpAnim.uasset'
-[2016.03.26-14.40.50:969][217]LogSavePackage: Total save time: 9.594005ms
-[2016.03.26-14.40.50:969][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyJumpAnim.uasset
-[2016.03.26-14.40.50:991][217]LogSavePackage: Save=6.181522ms
-[2016.03.26-14.40.50:991][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyMoveAnim8E6DE3D74AA2C47A8801D98037D84FFE.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMoveAnim.uasset'
-[2016.03.26-14.40.50:995][217]LogSavePackage: Total save time: 10.281362ms
-[2016.03.26-14.40.50:995][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMoveAnim.uasset
-[2016.03.26-14.40.51:061][217]LogSavePackage: Save=50.472088ms
-[2016.03.26-14.40.51:061][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/kappaHeadB4F76ACE45F3017B67AFA2BE241B1978.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHead.uasset'
-[2016.03.26-14.40.51:063][217]LogSavePackage: Total save time: 52.228831ms
-[2016.03.26-14.40.51:063][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHead.uasset
-[2016.03.26-14.42.25:157][522]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
-[2016.03.26-14.42.25:195][522]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
-[2016.03.26-14.42.25:198][522]LogMaterial: 0.000081 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
-[2016.03.26-14.42.28:205][606]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
-[2016.03.26-14.42.28:205][606]MaterialEditorStats: Info Vertex shader: 31 instructions
-[2016.03.26-14.42.28:205][606]MaterialEditorStats: Info Texture samplers: 0/16
-[2016.03.26-14.42.31:754][851]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
-[2016.03.26-14.42.31:757][851]LogMaterial: 0.000119 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
-[2016.03.26-14.42.31:758][851]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2016.03.26-14.42.31:787][851]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2016.03.26-14.42.32:656][938]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
-[2016.03.26-14.42.32:657][938]MaterialEditorStats: Info Vertex shader: 31 instructions
-[2016.03.26-14.42.32:657][938]MaterialEditorStats: Info Texture samplers: 0/16
-[2016.03.26-14.42.35:833][293]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
-[2016.03.26-14.42.35:837][293]LogMaterial: 0.000096 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
-[2016.03.26-14.42.35:866][293]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
-[2016.03.26-14.42.36:849][386]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
-[2016.03.26-14.42.36:849][386]MaterialEditorStats: Info Vertex shader: 33 instructions
-[2016.03.26-14.42.36:849][386]MaterialEditorStats: Info Texture samplers: 1/16
-[2016.03.26-14.42.46:211][250]LogSavePackage: Save=12.078208ms
-[2016.03.26-14.42.46:211][250]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/kappaHeadMat605BBC7348F3E7C0FD2E2D9A6ED9869C.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHeadMat.uasset'
-[2016.03.26-14.42.46:214][250]LogSavePackage: Total save time: 15.310947ms
-[2016.03.26-14.42.46:214][250]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHeadMat.uasset
-[2016.03.26-14.42.58:066][682]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
-[2016.03.26-14.42.58:075][682]LogMaterial: 0.000087 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
-[2016.03.26-14.42.58:086][682]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
-[2016.03.26-14.42.58:095][682]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
-[2016.03.26-14.42.58:100][682]LogMaterial: 0.000540 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
-[2016.03.26-14.43.05:301][ 96]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx)
-[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: Geometry, ItemCount : 1
-[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: Material, ItemCount : 1
-[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: Model, ItemCount : 1
-[2016.03.26-14.43.05:368][ 96]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx
-[2016.03.26-14.43.05:436][ 96]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.43.09:557][ 96]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx
-[2016.03.26-14.43.09:626][ 96]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.43.09:652][ 96]LogStaticMesh: Building static mesh head...
-[2016.03.26-14.43.09:661][ 96]LogStaticMesh: Built static mesh [0.008582.2s] /Game/Assets/Characters/Kappa/head.head
-[2016.03.26-14.43.09:666][ 96]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
-[2016.03.26-14.43.13:545][525]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFA3920720
-[2016.03.26-14.43.17:551][636]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx)
-[2016.03.26-14.43.17:558][636]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2016.03.26-14.43.17:558][636]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2016.03.26-14.43.17:558][636]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2016.03.26-14.43.17:558][636]LogFbx: ItemName: Geometry, ItemCount : 1
-[2016.03.26-14.43.17:558][636]LogFbx: ItemName: Material, ItemCount : 1
-[2016.03.26-14.43.17:558][636]LogFbx: ItemName: Model, ItemCount : 1
-[2016.03.26-14.43.17:616][636]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx
-[2016.03.26-14.43.17:683][636]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.43.19:746][636]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx
-[2016.03.26-14.43.19:814][636]LogFbx: FBX Scene Loaded Succesfully
-[2016.03.26-14.43.19:840][636]LogStaticMesh: Building static mesh head...
-[2016.03.26-14.43.19:847][636]LogStaticMesh: Built static mesh [0.007015.2s] /Game/Assets/Characters/Kappa/head.head
-[2016.03.26-14.43.21:132][733]LogActorFactory: Actor Factory created head
-[2016.03.26-14.43.24:134][ 92]LogActorFactory: Actor Factory created head
-[2016.03.26-14.43.26:356][301]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (head)
-[2016.03.26-14.43.45:702][274]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (head)
-[2016.03.26-14.43.50:398][809]Cmd: DELETE
-[2016.03.26-14.43.50:398][809]Cmd: ACTOR DELETE
-[2016.03.26-14.43.50:398][809]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.03.26-14.43.50:407][809]LogEditorActor: Deleted 1 Actors (0.010 secs)
-[2016.03.26-14.43.53:060][929]LogSavePackage: Save=1274.049072ms
-[2016.03.26-14.43.53:060][929]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/FirstPersonExampleMap9724B3384826A344D35A6EB0686C1D1C.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
-[2016.03.26-14.43.53:063][929]LogSavePackage: Total save time: 1278.837714ms
-[2016.03.26-14.43.53:064][929]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
-[2016.03.26-14.43.53:089][929]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 1.359
-[2016.03.26-14.43.53:123][929]LogSavePackage: Save=11.498580ms
-[2016.03.26-14.43.53:123][929]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/kappaHeadMat90D7F26640EB1AAF907C4A9CD2701E0E.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHeadMat.uasset'
-[2016.03.26-14.43.53:125][929]LogSavePackage: Total save time: 17.722841ms
-[2016.03.26-14.43.53:125][929]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHeadMat.uasset
-[2016.03.26-14.43.53:141][929]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Characters/Kappa/head" FILE="../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/head.uasset" SILENT=true
-[2016.03.26-14.43.53:154][929]LogSavePackage: Save=12.461699ms
-[2016.03.26-14.43.53:154][929]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/headA372386E437A7FC31CEE5DB135FD32D7.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/head.uasset'
-[2016.03.26-14.43.53:161][929]LogSavePackage: Total save time: 19.255634ms
-[2016.03.26-14.43.53:161][929]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/head.uasset
-[2016.03.26-14.43.54:866][125]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
-[2016.03.26-14.43.54:867][125]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
-[2016.03.26-14.43.54:877][125]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
-[2016.03.26-14.43.54:877][125]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
-[2016.03.26-14.43.55:069][126]Cmd: QUIT_EDITOR
-[2016.03.26-14.43.55:188][126]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
-[2016.03.26-14.43.55:188][126]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
-[2016.03.26-14.43.55:243][126]LogExit: Preparing to exit.
-[2016.03.26-14.43.56:120][126]LogExit: Editor shut down
-[2016.03.26-14.43.56:120][126]LogExit: Transaction tracking system shut down
-[2016.03.26-14.43.56:122][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF98CDA340
-[2016.03.26-14.43.56:123][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9AE46C00
-[2016.03.26-14.43.56:123][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9A7F4F40
-[2016.03.26-14.43.56:123][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFB34D84A0
-[2016.03.26-14.43.56:123][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9A7F5440
-[2016.03.26-14.43.56:325][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFB9E34CC0
-[2016.03.26-14.43.56:325][126]LogExit: Object subsystem successfully closed.
-[2016.03.26-14.43.56:333][126]LogD3D11RHI: Shutdown
-[2016.03.26-14.43.56:333][126]LogD3D11RHI: CleanupD3DDevice
-[2016.03.26-14.43.56:387][126]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module MaterialEditor (200)
-[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module CookingStats (199)
-[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
-[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
-[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
-[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
-[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module BspMode (185)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
-[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
-[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
-[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
-[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
-[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module MergeActors (169)
-[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module SizeMap (168)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module TreeMap (167)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module XmlParser (158)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Blutility (157)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AutomationController (146)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Layers (144)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Persona (140)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Kismet (139)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Toolbox (136)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module OutputLog (133)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GammaUI (132)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Documentation (131)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Analytics (127)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AIModule (124)
-[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
-[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
-[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
-[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
-[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module SteamVR (119)
-[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
-[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
-[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module OculusInput (116)
-[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
-[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
-[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module CableComponent (113)
-[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
-[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
-[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
-[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
-[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
-[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
-[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module SourceControl (100)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module HotReload (93)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module MainFrame (92)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
-[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
-[2016.03.26-14.43.57:007][126]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
-[2016.03.26-14.43.57:090][126]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
-[2016.03.26-14.43.57:090][126]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
-[2016.03.26-14.43.57:090][126]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
-[2016.03.26-14.43.57:191][126]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
-[2016.03.26-14.43.57:191][126]LogModuleManager: Shutting down and abandoning module Paper2D (84)
-[2016.03.26-14.43.57:191][126]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module Media (82)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module MessageLog (73)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module Sequencer (72)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module AssetTools (71)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module UMG (69)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module Slate (68)
-[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module SessionServices (66)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module Networking (61)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module Core (60)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
-[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
-[2016.03.26-14.43.57:296][126]LogDerivedDataCache: Shutdown
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.03.26-14.43.58:300][126]LogExit: Exiting.
-[2016.03.26-14.43.58:310][126]Log file closed, 03/26/16 07:43:58
+[2016.03.26-15.02.01:521][387]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_1) - call TermArticulated first.
+[2016.03.26-15.02.01:580][388]LogRenderer: Reallocating scene render targets to support 1208x800 (Frame:68381).
+[2016.03.26-15.02.05:109][677]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000026354A93600
+[2016.03.26-15.02.05:114][677]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000026354A92980
+[2016.03.26-15.02.05:156][677]LogSavePackage: Save=11.202911ms
+[2016.03.26-15.02.05:156][677]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowBodyMesh1DC7E489485363BD9C48178C1FCAA9AF.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyMesh.uasset'
+[2016.03.26-15.02.05:158][677]LogSavePackage: Total save time: 13.012931ms
+[2016.03.26-15.02.05:158][677]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyMesh.uasset
+[2016.03.26-15.02.05:167][677]LogSavePackage: Save=4.162487ms
+[2016.03.26-15.02.05:167][677]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowBodyMesh_PhysicsAsset60E5F1684BC125EA8805EB9096F498B4.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyMesh_PhysicsAsset.uasset'
+[2016.03.26-15.02.05:169][677]LogSavePackage: Total save time: 6.207868ms
+[2016.03.26-15.02.05:169][677]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyMesh_PhysicsAsset.uasset
+[2016.03.26-15.02.05:177][677]LogSavePackage: Save=2.877938ms
+[2016.03.26-15.02.05:177][677]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowBodyMesh_Skeleton75BBFE0A4219140B42F5CFB163C93BEE.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyMesh_Skeleton.uasset'
+[2016.03.26-15.02.05:178][677]LogSavePackage: Total save time: 4.601598ms
+[2016.03.26-15.02.05:179][677]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyMesh_Skeleton.uasset
+[2016.03.26-15.04.04:734][732]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_2) - call TermArticulated first.
+[2016.03.26-15.04.04:792][733]LogRenderer: Reallocating scene render targets to support 1208x812 (Frame:88496).
+[2016.03.26-15.04.09:588][987]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002635643D580
+[2016.03.26-15.04.09:588][987]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002635643DE40
+[2016.03.26-15.04.09:588][987]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002635643EF20
+[2016.03.26-15.04.09:588][987]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002635643CC20
+[2016.03.26-15.04.16:584][ 53]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowArmsIdleAnim.fbx)
+[2016.03.26-15.04.16:591][ 53]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-15.04.16:591][ 53]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-15.04.16:591][ 53]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-15.04.16:591][ 53]LogFbx: ItemName: NodeAttribute, ItemCount : 9
+[2016.03.26-15.04.16:591][ 53]LogFbx: ItemName: Model, ItemCount : 9
+[2016.03.26-15.04.16:591][ 53]LogFbx: ItemName: AnimationCurveNode, ItemCount : 37
+[2016.03.26-15.04.16:591][ 53]LogFbx: ItemName: AnimationCurve, ItemCount : 70
+[2016.03.26-15.04.16:648][ 53]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowArmsIdleAnim.fbx
+[2016.03.26-15.04.16:753][ 53]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.04.40:006][ 53]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowArmsIdleAnim.fbx
+[2016.03.26-15.04.40:125][ 53]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.04.40:151][ 53]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-15.04.40:151][ 53]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-15.04.40:151][ 53]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-15.04.40:151][ 53]LogFbx: SortedLinks :(3) joint9
+[2016.03.26-15.04.40:151][ 53]LogFbx: SortedLinks :(4) joint10
+[2016.03.26-15.04.40:151][ 53]LogFbx: SortedLinks :(5) joint11
+[2016.03.26-15.04.40:151][ 53]LogFbx: SortedLinks :(6) joint12
+[2016.03.26-15.04.40:151][ 53]LogFbx: SortedLinks :(7) joint21
+[2016.03.26-15.04.40:151][ 53]LogFbx: SortedLinks :(8) joint22
+[2016.03.26-15.04.40:152][ 53]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-15.04.40:253][ 53]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowArmsIdleAnim'
+[2016.03.26-15.04.40:253][ 53]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowArmsIdleAnim'
+[2016.03.26-15.04.40:253][ 53]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowArmsIdleAnim.yellowArmsIdleAnim'
+[2016.03.26-15.04.47:451][ 67]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowArmsThrow.fbx)
+[2016.03.26-15.04.47:461][ 67]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-15.04.47:461][ 67]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-15.04.47:461][ 67]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-15.04.47:461][ 67]LogFbx: ItemName: NodeAttribute, ItemCount : 9
+[2016.03.26-15.04.47:461][ 67]LogFbx: ItemName: Model, ItemCount : 9
+[2016.03.26-15.04.47:461][ 67]LogFbx: ItemName: AnimationCurveNode, ItemCount : 25
+[2016.03.26-15.04.47:461][ 67]LogFbx: ItemName: AnimationCurve, ItemCount : 40
+[2016.03.26-15.04.47:519][ 67]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowArmsThrow.fbx
+[2016.03.26-15.04.47:617][ 67]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.05.14:826][ 67]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowArmsThrow.fbx
+[2016.03.26-15.05.14:936][ 67]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.05.14:962][ 67]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-15.05.14:962][ 67]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-15.05.14:962][ 67]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-15.05.14:962][ 67]LogFbx: SortedLinks :(3) joint9
+[2016.03.26-15.05.14:962][ 67]LogFbx: SortedLinks :(4) joint10
+[2016.03.26-15.05.14:962][ 67]LogFbx: SortedLinks :(5) joint11
+[2016.03.26-15.05.14:962][ 67]LogFbx: SortedLinks :(6) joint12
+[2016.03.26-15.05.14:962][ 67]LogFbx: SortedLinks :(7) joint21
+[2016.03.26-15.05.14:962][ 67]LogFbx: SortedLinks :(8) joint22
+[2016.03.26-15.05.14:962][ 67]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-15.05.14:989][ 67]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowArmsThrow'
+[2016.03.26-15.05.14:989][ 67]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowArmsThrow'
+[2016.03.26-15.05.14:989][ 67]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowArmsThrow.yellowArmsThrow'
+[2016.03.26-15.05.30:603][450]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBodyDeathAnim.fbx)
+[2016.03.26-15.05.30:610][450]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-15.05.30:610][450]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-15.05.30:610][450]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-15.05.30:610][450]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-15.05.30:610][450]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-15.05.30:610][450]LogFbx: ItemName: AnimationCurveNode, ItemCount : 19
+[2016.03.26-15.05.30:610][450]LogFbx: ItemName: AnimationCurve, ItemCount : 30
+[2016.03.26-15.05.30:667][450]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBodyDeathAnim.fbx
+[2016.03.26-15.05.30:751][450]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.05.55:087][450]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBodyDeathAnim.fbx
+[2016.03.26-15.05.55:174][450]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.05.55:199][450]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-15.05.55:199][450]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-15.05.55:199][450]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-15.05.55:199][450]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-15.05.55:199][450]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-15.05.55:199][450]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-15.05.55:199][450]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-15.05.55:199][450]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-15.05.55:210][450]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyDeathAnim'
+[2016.03.26-15.05.55:210][450]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyDeathAnim'
+[2016.03.26-15.05.55:210][450]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowBodyDeathAnim.yellowBodyDeathAnim'
+[2016.03.26-15.05.59:535][593]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBodyFallingAnim.fbx)
+[2016.03.26-15.05.59:543][593]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-15.05.59:543][593]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-15.05.59:543][593]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-15.05.59:543][593]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-15.05.59:543][593]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-15.05.59:543][593]LogFbx: ItemName: AnimationCurveNode, ItemCount : 23
+[2016.03.26-15.05.59:543][593]LogFbx: ItemName: AnimationCurve, ItemCount : 40
+[2016.03.26-15.05.59:601][593]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBodyFallingAnim.fbx
+[2016.03.26-15.05.59:688][593]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.06.05:759][593]LogFbx: Loading FBX Scene from C:\Users\Wax Chug da Gwad\Desktop\killer-self3\Assets\PogChamp\yellowBodyFallingAnim.fbx
+[2016.03.26-15.06.05:848][593]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.06.05:872][593]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-15.06.05:872][593]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-15.06.05:872][593]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-15.06.05:872][593]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-15.06.05:872][593]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-15.06.05:872][593]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-15.06.05:872][593]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-15.06.05:872][593]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-15.06.05:888][593]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyFallingAnim'
+[2016.03.26-15.06.05:888][593]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyFallingAnim'
+[2016.03.26-15.06.05:888][593]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowBodyFallingAnim.yellowBodyFallingAnim'
+[2016.03.26-15.06.30:155][218]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/PogChamp/yellowBodyIdleAnim.fbx)
+[2016.03.26-15.06.30:163][218]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-15.06.30:163][218]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-15.06.30:163][218]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-15.06.30:163][218]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-15.06.30:163][218]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-15.06.30:163][218]LogFbx: ItemName: AnimationCurveNode, ItemCount : 27
+[2016.03.26-15.06.30:163][218]LogFbx: ItemName: AnimationCurve, ItemCount : 50
+[2016.03.26-15.06.30:221][218]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/PogChamp/yellowBodyIdleAnim.fbx
+[2016.03.26-15.06.30:315][218]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.06.34:454][218]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/PogChamp/yellowBodyIdleAnim.fbx
+[2016.03.26-15.06.34:550][218]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.06.34:573][218]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-15.06.34:573][218]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-15.06.34:573][218]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-15.06.34:573][218]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-15.06.34:573][218]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-15.06.34:573][218]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-15.06.34:573][218]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-15.06.34:574][218]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-15.06.34:642][218]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyIdleAnim'
+[2016.03.26-15.06.34:643][218]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyIdleAnim'
+[2016.03.26-15.06.34:643][218]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowBodyIdleAnim.yellowBodyIdleAnim'
+[2016.03.26-15.06.45:957][369]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/PogChamp/yellowBodyJumpAnim.fbx)
+[2016.03.26-15.06.45:967][369]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-15.06.45:967][369]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-15.06.45:967][369]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-15.06.45:967][369]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-15.06.45:967][369]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-15.06.45:967][369]LogFbx: ItemName: AnimationCurveNode, ItemCount : 23
+[2016.03.26-15.06.45:967][369]LogFbx: ItemName: AnimationCurve, ItemCount : 40
+[2016.03.26-15.06.46:025][369]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/PogChamp/yellowBodyJumpAnim.fbx
+[2016.03.26-15.06.46:113][369]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.06.51:939][369]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/PogChamp/yellowBodyJumpAnim.fbx
+[2016.03.26-15.06.52:026][369]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.06.52:049][369]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-15.06.52:049][369]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-15.06.52:049][369]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-15.06.52:049][369]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-15.06.52:049][369]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-15.06.52:049][369]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-15.06.52:049][369]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-15.06.52:049][369]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-15.06.52:060][369]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyJumpAnim'
+[2016.03.26-15.06.52:060][369]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyJumpAnim'
+[2016.03.26-15.06.52:060][369]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowBodyJumpAnim.yellowBodyJumpAnim'
+[2016.03.26-15.06.57:187][517]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/PogChamp/yellowBodyMoveAnim.fbx)
+[2016.03.26-15.06.57:194][517]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-15.06.57:194][517]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-15.06.57:194][517]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-15.06.57:194][517]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-15.06.57:194][517]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-15.06.57:194][517]LogFbx: ItemName: AnimationCurveNode, ItemCount : 23
+[2016.03.26-15.06.57:194][517]LogFbx: ItemName: AnimationCurve, ItemCount : 40
+[2016.03.26-15.06.57:253][517]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/PogChamp/yellowBodyMoveAnim.fbx
+[2016.03.26-15.06.57:344][517]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.07.01:642][517]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/PogChamp/yellowBodyMoveAnim.fbx
+[2016.03.26-15.07.01:732][517]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-15.07.01:755][517]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-15.07.01:755][517]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-15.07.01:755][517]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-15.07.01:755][517]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-15.07.01:755][517]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-15.07.01:755][517]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-15.07.01:755][517]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-15.07.01:755][517]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-15.07.01:772][517]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyMoveAnim'
+[2016.03.26-15.07.01:772][517]LogLinker:Warning: Can't find file '/Game/Assets/Characters/PogChamp/yellowBodyMoveAnim'
+[2016.03.26-15.07.01:772][517]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/PogChamp/yellowBodyMoveAnim.yellowBodyMoveAnim'
+[2016.03.26-15.07.22:385][492]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-15.07.26:417][711]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-15.07.26:462][711]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-15.07.26:464][711]LogMaterial: 0.000065 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-15.07.26:488][711]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2016.03.26-15.07.28:095][845]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2016.03.26-15.07.28:095][845]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.03.26-15.07.28:095][845]MaterialEditorStats: Info Texture samplers: 1/16
+[2016.03.26-15.07.30:750][122]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-15.07.30:753][122]LogMaterial: 0.000056 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-15.07.30:781][122]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2016.03.26-15.07.32:372][265]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2016.03.26-15.07.32:372][265]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.03.26-15.07.32:372][265]MaterialEditorStats: Info Texture samplers: 1/16
+[2016.03.26-15.07.33:219][335]LogSavePackage: Save=12.437694ms
+[2016.03.26-15.07.33:219][335]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowArmsIdleAnimFB2ABE684AD12555C533D2A9EA020C87.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowArmsIdleAnim.uasset'
+[2016.03.26-15.07.33:221][335]LogSavePackage: Total save time: 14.450584ms
+[2016.03.26-15.07.33:221][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowArmsIdleAnim.uasset
+[2016.03.26-15.07.33:252][335]LogSavePackage: Save=11.776098ms
+[2016.03.26-15.07.33:252][335]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowArmsThrow2634F3CA40FA9D30C8491786FA1AD721.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowArmsThrow.uasset'
+[2016.03.26-15.07.33:254][335]LogSavePackage: Total save time: 13.712876ms
+[2016.03.26-15.07.33:254][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowArmsThrow.uasset
+[2016.03.26-15.07.33:285][335]LogSavePackage: Save=10.932126ms
+[2016.03.26-15.07.33:285][335]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowBodyDeathAnim7A9CF69C4C21C4F8D2AF1E80757A3646.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyDeathAnim.uasset'
+[2016.03.26-15.07.33:287][335]LogSavePackage: Total save time: 12.729850ms
+[2016.03.26-15.07.33:287][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyDeathAnim.uasset
+[2016.03.26-15.07.33:322][335]LogSavePackage: Save=14.633252ms
+[2016.03.26-15.07.33:322][335]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowBodyFallingAnimBCF1BFC64BE88003EB8F939275071950.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyFallingAnim.uasset'
+[2016.03.26-15.07.33:325][335]LogSavePackage: Total save time: 17.076176ms
+[2016.03.26-15.07.33:325][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyFallingAnim.uasset
+[2016.03.26-15.07.33:359][335]LogSavePackage: Save=13.213165ms
+[2016.03.26-15.07.33:359][335]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowBodyIdleAnim2B47701D44A49C796A382584E67E2E76.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyIdleAnim.uasset'
+[2016.03.26-15.07.33:361][335]LogSavePackage: Total save time: 15.432436ms
+[2016.03.26-15.07.33:361][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyIdleAnim.uasset
+[2016.03.26-15.07.33:398][335]LogSavePackage: Save=14.656379ms
+[2016.03.26-15.07.33:398][335]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowBodyJumpAnim17C107D6435CB0AD155987B1BD7D36DA.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyJumpAnim.uasset'
+[2016.03.26-15.07.33:408][335]LogSavePackage: Total save time: 25.603727ms
+[2016.03.26-15.07.33:408][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyJumpAnim.uasset
+[2016.03.26-15.07.33:464][335]LogSavePackage: Save=13.531082ms
+[2016.03.26-15.07.33:464][335]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowBodyMoveAnimF0648DBE4F5C157ABA83A8A297C6F5A5.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyMoveAnim.uasset'
+[2016.03.26-15.07.33:466][335]LogSavePackage: Total save time: 15.630037ms
+[2016.03.26-15.07.33:466][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowBodyMoveAnim.uasset
+[2016.03.26-15.07.33:508][335]LogSavePackage: Save=18.691523ms
+[2016.03.26-15.07.33:508][335]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/kappaHeadMat96704C264A64EA36518C7C88727B0DB5.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/kappaHeadMat.uasset'
+[2016.03.26-15.07.33:515][335]LogSavePackage: Total save time: 25.823869ms
+[2016.03.26-15.07.33:515][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/kappaHeadMat.uasset
+[2016.03.26-15.07.40:195][430]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-15.07.40:204][430]LogMaterial: 0.000085 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-15.07.40:225][430]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-15.07.40:235][430]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-15.07.40:240][430]LogMaterial: 0.000589 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-15.07.53:284][222]LogSavePackage: Save=11.620946ms
+[2016.03.26-15.07.53:284][222]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/pogChampHeadMatB955FC3947C3657225FBC190B90AC04B.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/pogChampHeadMat.uasset'
+[2016.03.26-15.07.53:286][222]LogSavePackage: Total save time: 13.553623ms
+[2016.03.26-15.07.53:286][222]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/pogChampHeadMat.uasset
+[2016.03.26-15.07.53:337][222]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000026382D32160
+[2016.03.26-15.08.17:733][202]LogSavePackage: Save=10.794245ms
+[2016.03.26-15.08.17:733][202]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/yellowHeadDA3E8FD24EBA10D55FA348A90E72511C.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowHead.uasset'
+[2016.03.26-15.08.17:735][202]LogSavePackage: Total save time: 12.666322ms
+[2016.03.26-15.08.17:735][202]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/PogChamp/yellowHead.uasset
+[2016.03.26-15.08.19:524][330]LogRenderer: Reallocating scene render targets to support 1208x876 (Frame:100824).
+[2016.03.26-15.09.06:385][115]LogActorFactory: Actor Factory created yellowHead
+[2016.03.26-15.09.07:018][190]LogActorFactory: Actor Factory created yellowHead
+[2016.03.26-15.09.07:712][262]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (yellowHead)
+[2016.03.26-15.09.19:069][387]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (yellowHead)
+[2016.03.26-15.09.19:505][438]Cmd: DELETE
+[2016.03.26-15.09.19:505][438]Cmd: ACTOR DELETE
+[2016.03.26-15.09.19:506][438]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.
