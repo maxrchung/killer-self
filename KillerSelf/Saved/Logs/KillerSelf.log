@@ -1,450 +1,858 @@
-﻿[2016.03.26-13.35.27:941][  0]Log file open, 03/26/16 06:35:27
-[2016.03.26-13.35.27:941][  0]LogInit:Display: Running engine for game: KillerSelf
-[2016.03.26-13.35.27:941][  0]LogPlatformFile: Not using cached read wrapper
-[2016.03.26-13.35.27:941][  0]LogInit:Display: RandInit(422544215) SRandInit(422544216).
-[2016.03.26-13.35.27:941][  0]LogTaskGraph: Started task graph with 4 named threads and 5 total threads.
-[2016.03.26-13.35.27:941][  0]LogStats: Stats thread started at 0.073454
-[2016.03.26-13.35.27:941][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.03.26-13.35.27:941][  0]LogInit: API Version: 2758231
-[2016.03.26-13.35.27:941][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
-[2016.03.26-13.35.27:941][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.03.26-13.35.27:941][  0]LogInit: Build Configuration: Development
-[2016.03.26-13.35.27:941][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.03.26-13.35.27:941][  0]LogInit: Command line: -EpicPortal 
-[2016.03.26-13.35.27:941][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.03.26-13.35.27:941][  0]LogInit: Rocket: 1
-[2016.03.26-13.35.27:951][  0]LogInit: Using libcurl 7.41.0
-[2016.03.26-13.35.27:951][  0]LogInit:  - built for x86_64-pc-win32
-[2016.03.26-13.35.27:951][  0]LogInit:  - supports SSL with WinSSL
-[2016.03.26-13.35.27:951][  0]LogInit:  - other features:
-[2016.03.26-13.35.27:951][  0]LogInit:      CURL_VERSION_SSL
-[2016.03.26-13.35.27:951][  0]LogInit:      CURL_VERSION_IPV6
-[2016.03.26-13.35.27:951][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.03.26-13.35.27:951][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.03.26-13.35.27:951][  0]LogInit:      CURL_VERSION_IDN
-[2016.03.26-13.35.27:951][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.03.26-13.35.27:951][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.03.26-13.35.27:951][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.03.26-13.35.27:951][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.03.26-13.35.27:951][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.03.26-13.35.27:960][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.03.26-13.35.27:968][  0]LogInit: Object subsystem initialized
-[2016.03.26-13.35.27:969][  0]LogInit: Selected Device Profile: [Windows]
-[2016.03.26-13.35.27:969][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.03.26-13.35.27:982][  0]LogInit: Computer: BEZLYLAPTOP
-[2016.03.26-13.35.27:982][  0]LogInit: User: Emerson
-[2016.03.26-13.35.27:982][  0]LogInit: CPU Page size=4096, Cores=2
-[2016.03.26-13.35.27:983][  0]LogInit: High frequency timer resolution =2.338338 MHz
-[2016.03.26-13.35.27:983][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2016.03.26-13.35.27:983][  0]LogMemory: Platform Memory Stats for Windows
-[2016.03.26-13.35.27:983][  0]LogMemory: Process Physical Memory: 55.92 MB used, 55.92 MB peak
-[2016.03.26-13.35.27:983][  0]LogMemory: Process Virtual Memory: 57.53 MB used, 57.53 MB peak
-[2016.03.26-13.35.27:983][  0]LogMemory: Physical Memory: 3643.30 MB used, 8122.15 MB total
-[2016.03.26-13.35.27:983][  0]LogMemory: Virtual Memory: 382.73 MB used, 134217728.00 MB total
-[2016.03.26-13.35.28:028][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.03.26-13.35.28:694][  0]LogD3D11RHI: Found D3D11 adapter 0: Intel(R) HD Graphics Family (Feature Level 11_0)
-[2016.03.26-13.35.28:694][  0]LogD3D11RHI: Adapter has 112MB of dedicated video memory, 0MB of dedicated system memory, and 4061MB of shared system memory, 1 output[s]
-[2016.03.26-13.35.28:696][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
-[2016.03.26-13.35.28:696][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4061MB of shared system memory, 0 output[s]
-[2016.03.26-13.35.28:696][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.03.26-13.35.28:706][  0]LogD3D11RHI: !Direct3DDevice
-[2016.03.26-13.35.28:706][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.03.26-13.35.28:720][  0]LogD3D11RHI: Async texture creation enabled
-[2016.03.26-13.35.28:726][  0]LogShaderCompilers: Guid format shader working directory is -24 characters bigger than the processId version (../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Intermediate/Shaders/WorkingDirectory/29288/).
-[2016.03.26-13.35.28:726][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Emerson/AppData/Local/Temp/UnrealShaderWorkingDir/B4DE06B44367E53B4E666FAC820E73BA/'.
-[2016.03.26-13.35.28:726][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.03.26-13.35.29:816][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.03.26-13.35.29:822][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.03.26-13.35.29:829][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.03.26-13.35.29:835][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.03.26-13.35.29:840][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.03.26-13.35.29:845][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.03.26-13.35.29:849][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.03.26-13.35.29:851][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.03.26-13.35.29:855][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.03.26-13.35.29:859][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.03.26-13.35.29:863][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.03.26-13.35.29:872][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.03.26-13.35.29:872][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.03.26-13.35.29:873][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.03.26-13.35.29:892][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.03.26-13.35.29:897][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.03.26-13.35.29:901][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.03.26-13.35.29:905][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.03.26-13.35.29:905][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.03.26-13.35.30:010][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.03.26-13.35.30:072][  0]LogDerivedDataCache: Loaded boot cache 0.06s 41MB C:/Users/Emerson/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.03.26-13.35.30:072][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Emerson/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.03.26-13.35.30:072][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.03.26-13.35.30:072][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.03.26-13.35.30:072][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.03.26-13.35.30:072][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.03.26-13.35.30:146][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.03.26-13.35.30:157][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Emerson/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.03.26-13.35.30:381][  0]LogInit: Selected Device Profile: [Windows]
-[2016.03.26-13.35.30:384][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.03.26-13.35.30:521][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.03.26-13.35.30:521][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.03.26-13.35.30:828][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.03.26-13.35.31:793][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.03.26-13.35.31:897][  0]LogAssetRegistry: FAssetRegistry took 0.0109 seconds to start up
-[2016.03.26-13.35.32:185][  0]SourceControl: Info Source control is disabled
-[2016.03.26-13.35.32:251][  0]SourceControl: Info Source control is disabled
-[2016.03.26-13.35.32:273][  0]SourceControl: Info Source control is disabled
-[2016.03.26-13.35.32:296][  0]SourceControl: Info Source control is disabled
-[2016.03.26-13.35.32:603][  0]LogObj: 28633 objects as part of root set at end of initial load.
-[2016.03.26-13.35.32:603][  0]LogUObjectAllocator: 6099752 out of 0 bytes used by permanent object pool.
-[2016.03.26-13.35.32:667][  0]LogEngine: Initializing Engine...
-[2016.03.26-13.35.32:669][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.03.26-13.35.32:670][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.03.26-13.35.32:830][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.03.26-13.35.32:836][  0]LogInit: XAudio2 using 'Speakers (Razer Banshee)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.03.26-13.35.32:846][  0]LogInit: FAudioDevice initialized.
-[2016.03.26-13.35.32:963][  0]LogDerivedDataCache: Saved boot cache 0.12s 41MB C:/Users/Emerson/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.03.26-13.35.32:970][  0]LogInit: Texture streaming: Enabled
-[2016.03.26-13.35.32:978][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.03.26-13.35.32:978][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.03.26-13.35.32:978][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 480e4fc44221435044fe96a3e079de87|0c01ec0cd245479aaa1aee815a2d9699|d08f0b52-5654-4d4f-a336-4f408988900c
-[2016.03.26-13.35.32:978][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.03.26-13.35.32:993][  0]LogInit: Transaction tracking system initialized
-[2016.03.26-13.35.33:030][  0]BlueprintLog: New page: Editor Load
-[2016.03.26-13.35.33:146][  0]LocalizationService: Info Localization service is disabled
-[2016.03.26-13.35.33:411][  0]LogConsoleResponse:Display: 
-[2016.03.26-13.35.33:569][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.03.26-13.35.33:653][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/' took 0.02s
-[2016.03.26-13.35.33:653][  0]SourceControl: Info Source control is disabled
-[2016.03.26-13.35.33:653][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.03.26-13.35.33:654][  0]LightingResults: New page: Lighting Build
-[2016.03.26-13.35.33:658][  0]MapCheck: New page: Map Check
-[2016.03.26-13.35.33:659][  0]LightingResults: New page: Lighting Build
-[2016.03.26-13.35.33:685][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000116B1D82160
-[2016.03.26-13.35.33:925][  0]LogLinker:Warning: Asset '../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPerson/Meshes/FirstPersonProjectileMesh.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2016.03.26-13.35.34:186][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-13.35.34:186][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap.
-[2016.03.26-13.35.34:186][  0]LoadErrors:Error: Error /Game/FirstPersonBP/Maps/FirstPersonExampleMap : Can't find file for asset. /Game/FirstPersonBP/Blueprints/bodyMesh
-[2016.03.26-13.35.34:188][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-13.35.34:188][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap.
-[2016.03.26-13.35.34:188][  0]LoadErrors:Error: Error /Game/FirstPersonBP/Maps/FirstPersonExampleMap : Can't find file for asset. /Game/FirstPersonBP/Blueprints/bodyMesh
-[2016.03.26-13.35.34:189][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-13.35.34:189][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
-[2016.03.26-13.35.34:189][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-13.35.34:189][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
-[2016.03.26-13.35.34:222][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-13.35.34:222][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by FirstPersonCharacter_C_3
-[2016.03.26-13.35.34:222][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
-[2016.03.26-13.35.34:222][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by FirstPersonCharacter_C_3
-[2016.03.26-13.35.34:223][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
-[2016.03.26-13.35.34:223][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by Player1
-[2016.03.26-13.35.34:223][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
-[2016.03.26-13.35.34:223][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by Player1
-[2016.03.26-13.35.34:408][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2016.03.26-13.35.34:424][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.03.26-13.35.34:425][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.03.26-13.35.34:493][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 67.449ms to complete.
-[2016.03.26-13.35.34:493][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.840
-[2016.03.26-13.35.34:613][  0]LogCollectionManager: Loaded 0 collections in 0.002926 seconds
-[2016.03.26-13.35.34:654][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Saved/Collections/' took 0.01s
-[2016.03.26-13.35.34:654][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/Developers/Emerson/Collections/' took 0.01s
-[2016.03.26-13.35.34:654][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/Collections/' took 0.01s
-[2016.03.26-13.35.34:654][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2016.03.26-13.35.34:662][  0]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 1893 classes and 338 folders.
-[2016.03.26-13.35.34:670][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2016.03.26-13.35.34:719][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2016.03.26-13.35.34:725][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
-[2016.03.26-13.35.34:749][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.03.26-13.35.34:757][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.03.26-13.35.34:780][  0]LogLoad: Full Startup: 7.36 seconds (BP compile: 0.18 seconds)
-[2016.03.26-13.35.34:798][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.03.26-13.35.34:798][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.03.26-13.35.34:803][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.03.26-13.35.34:867][  0]LogContentStreaming: Texture pool size now 400 MB
-[2016.03.26-13.35.35:072][  0]LogRenderer: Reallocating scene render targets to support 964x432 (Frame:2).
-[2016.03.26-13.35.35:786][  5]LogAssetRegistry: Asset discovery search completed in 3.8997 seconds
-[2016.03.26-13.35.35:786][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000003 seconds (found 0 objects)
-[2016.03.26-13.35.35:786][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000050 seconds (updated 0 objects)
-[2016.03.26-13.35.40:761][196]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
-[2016.03.26-13.35.40:761][196]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.03.26-13.35.40:798][196]PIE: New page: PIE session: FirstPersonExampleMap (Mar 25, 2016, 11:35:40 PM)
-[2016.03.26-13.35.40:799][196]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/SecondPersonGameInstance'
-[2016.03.26-13.35.40:801][196]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/SecondPersonGameInstance'
-[2016.03.26-13.35.40:801][196]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/FirstPersonBP/Blueprints/SecondPersonGameInstance.SecondPersonGameInstance_C'
-[2016.03.26-13.35.40:813][196]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2016.03.26-13.35.40:862][196]LogPlayLevel: PIE: StaticDuplicateObject took: (0.048898s)
-[2016.03.26-13.35.40:864][196]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2016.03.26-13.35.40:865][196]LogPlayLevel: PIE: World Init took: (0.002130s)
-[2016.03.26-13.35.40:865][196]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.052213s)
-[2016.03.26-13.35.40:928][196]LogInit: XAudio2 using 'Speakers (Razer Banshee)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.03.26-13.35.40:936][196]LogInit: FAudioDevice initialized.
-[2016.03.26-13.35.41:185][196]LogLinker:Warning: Can't find file '/Game/FirstPerson/Textures/head_recall'
-[2016.03.26-13.35.41:186][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Textures/head_recall' while loading ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Blueprints/FirstPersonHUD.uasset.
-[2016.03.26-13.35.41:186][196]LoadErrors:Error: Error /Game/FirstPersonBP/Blueprints/FirstPersonHUD : Can't find file for asset. /Game/FirstPerson/Textures/head_recall
-[2016.03.26-13.35.41:187][196]LogLinker:Warning: Can't find file '/Game/FirstPerson/Textures/head_recall'
-[2016.03.26-13.35.41:187][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Textures/head_recall' while loading ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Blueprints/FirstPersonHUD.uasset.
-[2016.03.26-13.35.41:188][196]LogLinker:Warning: Can't find file '/Game/FirstPerson/Textures/head_recall'
-[2016.03.26-13.35.41:189][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Textures/head_recall' while loading ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Blueprints/FirstPersonGameMode.uasset.
-[2016.03.26-13.35.41:189][196]LoadErrors:Error: Error /Game/FirstPersonBP/Blueprints/FirstPersonGameMode : Can't find file for asset. /Game/FirstPerson/Textures/head_recall
-[2016.03.26-13.35.41:189][196]LogLinker:Warning: Can't find file '/Game/FirstPerson/Textures/head_recall'
-[2016.03.26-13.35.41:189][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Textures/head_recall' while loading ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Blueprints/FirstPersonGameMode.uasset.
-[2016.03.26-13.35.41:193][196]LogLinker:Warning: Can't find file '/Game/FirstPerson/Textures/head_recall'
-[2016.03.26-13.35.41:193][196]LoadErrors: Info Failed to load /Game/FirstPerson/Textures/head_recall.head_recall Referenced by EdGraphPin_27635
-[2016.03.26-13.35.41:193][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Textures/head_recall' while loading ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Blueprints/FirstPersonGameMode.uasset.
-[2016.03.26-13.35.41:246][196]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/SecondPersonController'
-[2016.03.26-13.35.41:247][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/SecondPersonController' while loading ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Blueprints/FirstPersonGameMode.uasset.
-[2016.03.26-13.35.41:247][196]LoadErrors:Error: Error /Game/FirstPersonBP/Blueprints/FirstPersonGameMode : Can't find file for asset. /Game/FirstPersonBP/Blueprints/SecondPersonController
-[2016.03.26-13.35.41:247][196]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/SecondPersonController'
-[2016.03.26-13.35.41:248][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/SecondPersonController' while loading ../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/FirstPersonBP/Blueprints/FirstPersonGameMode.uasset.
-[2016.03.26-13.35.41:248][196]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/SecondPersonController'
-[2016.03.26-13.35.41:248][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/SecondPersonController' while loading NULL.
-[2016.03.26-13.35.41:249][196]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/SecondPersonController'
-[2016.03.26-13.35.41:249][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/SecondPersonController' while loading NULL.
-[2016.03.26-13.35.41:249][196]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/SecondPersonController'
-[2016.03.26-13.35.41:249][196]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/SecondPersonController' while loading NULL.
-[2016.03.26-13.35.41:314][196]LogWorld: Game class is 'FirstPersonGameMode_C'
-[2016.03.26-13.35.41:415][196]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.03.26-06.35.41
-[2016.03.26-13.35.41:415][196]LogActor:Warning: GameSession /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.26-13.35.41:417][196]LogActor:Warning: GameNetworkManager /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.26-13.35.41:474][196]LogWorld: Bringing up level for play took: 0.072687
-[2016.03.26-13.35.41:495][196]LogSpawn:Warning: SpawnActor failed because no class was specified
-[2016.03.26-13.35.41:495][196]LogGameMode: Couldn't spawn player controller of class NULL
-[2016.03.26-13.35.41:495][196]LogSpawn:Warning: Login failed: Failed to spawn player controller
-[2016.03.26-13.35.46:340][196]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
-[2016.03.26-13.35.46:535][196]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
-[2016.03.26-13.35.46:582][196]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000116BF82A5C0
-[2016.03.26-13.43.44:865][971]Cmd: MAP LOAD FILE="../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/Maps/Map12.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.03.26-13.43.44:906][971]LightingResults: New page: Lighting Build
-[2016.03.26-13.43.44:936][971]LoadErrors: New page: Loading map: Map12.umap
-[2016.03.26-13.43.44:937][971]MapCheck: New page: Map Check
-[2016.03.26-13.43.44:937][971]LightingResults: New page: Lighting Build
-[2016.03.26-13.43.44:968][971]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000116A4AE4E00
-[2016.03.26-13.43.45:026][971]LogAIModule: Creating AISystem for world Map12
-[2016.03.26-13.43.45:081][971]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.03.26-13.43.45:136][971]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.03.26-13.43.45:196][971]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 60.132ms to complete.
-[2016.03.26-13.43.45:197][971]LogFileHelpers: Loading map 'Map12' took 0.333
-[2016.03.26-13.43.45:220][972]Cmd: UpdateLandscapeEditorData -warnings
-[2016.03.26-13.43.56:446][425]Cmd: MAP LOAD FILE="../../../../../../Users/Emerson/Documents/GitHub/killer-self/KillerSelf/Content/Maps/Map11.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.03.26-13.43.56:478][425]LightingResults: New page: Lighting Build
-[2016.03.26-13.43.56:501][425]LoadErrors: New page: Loading map: Map11.umap
-[2016.03.26-13.43.56:502][425]MapCheck: New page: Map Check
-[2016.03.26-13.43.56:502][425]LightingResults: New page: Lighting Build
-[2016.03.26-13.43.56:528][425]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000116A4689440
-[2016.03.26-13.43.56:569][425]LogAIModule: Creating AISystem for world Map11
-[2016.03.26-13.43.56:606][425]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.03.26-13.43.56:652][425]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.03.26-13.43.56:712][425]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 60.239ms to complete.
-[2016.03.26-13.43.56:712][425]LogFileHelpers: Loading map 'Map11' took 0.268
-[2016.03.26-13.43.56:738][426]Cmd: UpdateLandscapeEditorData
-[2016.03.26-13.43.56:740][426]Cmd: UpdateLandscapeEditorData -warnings
-[2016.03.26-13.44.08:797][945]Cmd: CLOSE_SLATE_MAINFRAME
-[2016.03.26-13.44.08:988][945]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.03.26-13.44.08:988][945]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.03.26-13.44.09:356][946]Cmd: QUIT_EDITOR
-[2016.03.26-13.44.10:340][946]LogExit: Preparing to exit.
-[2016.03.26-13.44.11:185][946]LogExit: Editor shut down
-[2016.03.26-13.44.11:186][946]LogExit: Transaction tracking system shut down
-[2016.03.26-13.44.11:188][946]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000116B9563880
-[2016.03.26-13.44.11:189][946]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000116BF82BF60
-[2016.03.26-13.44.11:190][946]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000116B9598C20
-[2016.03.26-13.44.11:344][946]LogExit: Object subsystem successfully closed.
-[2016.03.26-13.44.11:355][946]LogD3D11RHI: Shutdown
-[2016.03.26-13.44.11:355][946]LogD3D11RHI: CleanupD3DDevice
-[2016.03.26-13.44.11:457][946]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.03.26-13.44.11:473][946]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
-[2016.03.26-13.44.11:473][946]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
-[2016.03.26-13.44.11:473][946]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
-[2016.03.26-13.44.11:473][946]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
-[2016.03.26-13.44.11:474][946]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module BspMode (185)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
-[2016.03.26-13.44.11:475][946]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module MergeActors (169)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module SizeMap (168)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module TreeMap (167)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module XmlParser (158)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module Blutility (157)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
-[2016.03.26-13.44.12:417][946]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module AutomationController (146)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module Layers (144)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module Persona (140)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module Kismet (139)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module Toolbox (136)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module OutputLog (133)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module GammaUI (132)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module Documentation (131)
-[2016.03.26-13.44.12:418][946]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
-[2016.03.26-13.44.12:419][946]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
-[2016.03.26-13.44.12:419][946]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
-[2016.03.26-13.44.12:419][946]LogModuleManager: Shutting down and abandoning module Analytics (127)
-[2016.03.26-13.44.12:419][946]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
-[2016.03.26-13.44.12:419][946]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
-[2016.03.26-13.44.12:419][946]LogModuleManager: Shutting down and abandoning module AIModule (124)
-[2016.03.26-13.44.12:419][946]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
-[2016.03.26-13.44.12:641][946]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
-[2016.03.26-13.44.12:642][946]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
-[2016.03.26-13.44.12:642][946]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
-[2016.03.26-13.44.12:642][946]LogModuleManager: Shutting down and abandoning module SteamVR (119)
-[2016.03.26-13.44.12:642][946]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
-[2016.03.26-13.44.12:642][946]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
-[2016.03.26-13.44.12:642][946]LogModuleManager: Shutting down and abandoning module OculusInput (116)
-[2016.03.26-13.44.12:642][946]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module CableComponent (113)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
-[2016.03.26-13.44.12:686][946]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module SourceControl (100)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module HotReload (93)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module MainFrame (92)
-[2016.03.26-13.44.12:687][946]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
-[2016.03.26-13.44.12:688][946]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
-[2016.03.26-13.44.12:689][946]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
-[2016.03.26-13.44.12:746][946]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
-[2016.03.26-13.44.12:748][946]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
-[2016.03.26-13.44.12:748][946]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
-[2016.03.26-13.44.12:848][946]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
-[2016.03.26-13.44.12:848][946]LogModuleManager: Shutting down and abandoning module Paper2D (84)
-[2016.03.26-13.44.12:848][946]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module Media (82)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module MessageLog (73)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module Sequencer (72)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module AssetTools (71)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module UMG (69)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module Slate (68)
-[2016.03.26-13.44.12:851][946]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module SessionServices (66)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module Networking (61)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module Core (60)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
-[2016.03.26-13.44.12:854][946]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
-[2016.03.26-13.44.12:855][946]LogDerivedDataCache: Shutdown
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.03.26-13.44.12:855][946]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.03.26-13.44.12:856][946]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.03.26-13.44.14:858][946]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.03.26-13.44.14:858][946]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.03.26-13.44.14:858][946]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.03.26-13.44.14:858][946]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.03.26-13.44.14:859][946]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.03.26-13.44.14:859][946]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.03.26-13.44.14:859][946]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.03.26-13.44.14:860][946]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.03.26-13.44.14:862][946]LogExit: Exiting.
-[2016.03.26-13.44.14:888][946]Log file closed, 03/26/16 06:44:14
+﻿[2016.03.26-14.37.01:664][  0]Log file open, 03/26/16 07:37:01
+[2016.03.26-14.37.01:664][  0]LogInit:Display: Running engine for game: KillerSelf
+[2016.03.26-14.37.01:664][  0]LogPlatformFile: Not using cached read wrapper
+[2016.03.26-14.37.01:664][  0]LogInit:Display: RandInit(939823018) SRandInit(939823019).
+[2016.03.26-14.37.01:664][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.03.26-14.37.01:664][  0]LogStats: Stats thread started at 0.069523
+[2016.03.26-14.37.01:664][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.26-14.37.01:664][  0]LogInit: API Version: 2758231
+[2016.03.26-14.37.01:664][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2016.03.26-14.37.01:664][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.03.26-14.37.01:664][  0]LogInit: Build Configuration: Development
+[2016.03.26-14.37.01:664][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.03.26-14.37.01:664][  0]LogInit: Command line:  
+[2016.03.26-14.37.01:664][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.03.26-14.37.01:664][  0]LogInit: Rocket: 1
+[2016.03.26-14.37.01:669][  0]LogInit: Using libcurl 7.41.0
+[2016.03.26-14.37.01:669][  0]LogInit:  - built for x86_64-pc-win32
+[2016.03.26-14.37.01:669][  0]LogInit:  - supports SSL with WinSSL
+[2016.03.26-14.37.01:669][  0]LogInit:  - other features:
+[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_SSL
+[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_IPV6
+[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.03.26-14.37.01:669][  0]LogInit:      CURL_VERSION_IDN
+[2016.03.26-14.37.01:669][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.03.26-14.37.01:669][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.03.26-14.37.01:669][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.03.26-14.37.01:669][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.03.26-14.37.01:669][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.03.26-14.37.01:676][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.03.26-14.37.01:681][  0]LogInit: Object subsystem initialized
+[2016.03.26-14.37.01:682][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.26-14.37.01:682][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.03.26-14.37.01:689][  0]LogInit: Computer: WAXCHUGDAGWAD
+[2016.03.26-14.37.01:690][  0]LogInit: User: WaxChugdaGwad
+[2016.03.26-14.37.01:690][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.03.26-14.37.01:690][  0]LogInit: High frequency timer resolution =3.415987 MHz
+[2016.03.26-14.37.01:690][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.03.26-14.37.01:690][  0]LogMemory: Platform Memory Stats for Windows
+[2016.03.26-14.37.01:690][  0]LogMemory: Process Physical Memory: 56.19 MB used, 56.19 MB peak
+[2016.03.26-14.37.01:690][  0]LogMemory: Process Virtual Memory: 56.82 MB used, 56.82 MB peak
+[2016.03.26-14.37.01:690][  0]LogMemory: Physical Memory: 3964.82 MB used, 8133.81 MB total
+[2016.03.26-14.37.01:690][  0]LogMemory: Virtual Memory: 382.47 MB used, 134217728.00 MB total
+[2016.03.26-14.37.01:720][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.03.26-14.37.02:118][  0]LogD3D11RHI: Found D3D11 adapter 0: AMD Radeon HD 7800 Series (Feature Level 11_0)
+[2016.03.26-14.37.02:119][  0]LogD3D11RHI: Adapter has 2026MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 1 output[s]
+[2016.03.26-14.37.02:119][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.03.26-14.37.02:119][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 0 output[s]
+[2016.03.26-14.37.02:119][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.03.26-14.37.02:123][  0]LogD3D11RHI: !Direct3DDevice
+[2016.03.26-14.37.02:123][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.03.26-14.37.02:128][  0]LogD3D11RHI: Async texture creation disabled: no driver support
+[2016.03.26-14.37.02:139][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Intermediate/Shaders/WorkingDirectory/8108/).
+[2016.03.26-14.37.02:139][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/WAXCHU~1/AppData/Local/Temp/UnrealShaderWorkingDir/51A696784406FE927F5E628DB2EFB501/'.
+[2016.03.26-14.37.02:139][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.03.26-14.37.02:742][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.03.26-14.37.02:746][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.03.26-14.37.02:750][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.03.26-14.37.02:753][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.03.26-14.37.02:757][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.03.26-14.37.02:759][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.03.26-14.37.02:762][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.03.26-14.37.02:764][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.03.26-14.37.02:766][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.03.26-14.37.02:768][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.03.26-14.37.02:771][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.03.26-14.37.02:776][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.03.26-14.37.02:776][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.03.26-14.37.02:776][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.03.26-14.37.02:792][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.03.26-14.37.02:794][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.03.26-14.37.02:796][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.03.26-14.37.02:799][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.03.26-14.37.02:799][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.03.26-14.37.02:863][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: Loaded boot cache 0.04s 41MB C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.26-14.37.02:899][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.03.26-14.37.02:899][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.03.26-14.37.02:947][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.03.26-14.37.02:958][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.03.26-14.37.03:094][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.26-14.37.03:096][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.03.26-14.37.03:181][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.03.26-14.37.03:181][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.03.26-14.37.03:362][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.03.26-14.37.03:943][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.03.26-14.37.04:031][  0]LogAssetRegistry: FAssetRegistry took 0.0109 seconds to start up
+[2016.03.26-14.37.04:154][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.37.04:181][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.37.04:188][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.37.04:196][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.37.04:379][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2016.03.26-14.37.04:379][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
+[2016.03.26-14.37.04:427][  0]LogEngine: Initializing Engine...
+[2016.03.26-14.37.04:430][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.26-14.37.04:431][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.03.26-14.37.04:530][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.03.26-14.37.04:537][  0]LogInit: XAudio2 using 'SPDIF Interface (FiiO USB DAC-E10)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.03.26-14.37.04:543][  0]LogInit: FAudioDevice initialized.
+[2016.03.26-14.37.04:562][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Wax Chug da Gwad/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.26-14.37.04:566][  0]LogInit: Texture streaming: Enabled
+[2016.03.26-14.37.04:571][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.03.26-14.37.04:571][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.26-14.37.04:571][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 280fe6a54b320313db23c5a31c94bb2f|69b82b21758b47ffb5f352be72a3bedd|1ba83f7c-15f5-490d-8e1f-18b6d5d9746f
+[2016.03.26-14.37.04:571][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.03.26-14.37.04:580][  0]LogInit: Transaction tracking system initialized
+[2016.03.26-14.37.04:605][  0]BlueprintLog: New page: Editor Load
+[2016.03.26-14.37.04:677][  0]LocalizationService: Info Localization service is disabled
+[2016.03.26-14.37.04:740][  0]LogConsoleResponse:Display: 
+[2016.03.26-14.37.04:821][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.03.26-14.37.04:866][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/' took 0.01s
+[2016.03.26-14.37.04:866][  0]SourceControl: Info Source control is disabled
+[2016.03.26-14.37.04:866][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.26-14.37.04:866][  0]LightingResults: New page: Lighting Build
+[2016.03.26-14.37.04:869][  0]MapCheck: New page: Map Check
+[2016.03.26-14.37.04:869][  0]LightingResults: New page: Lighting Build
+[2016.03.26-14.37.04:877][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFA8E77B00
+[2016.03.26-14.37.05:015][  0]LogLinker:Warning: Asset '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPerson/Meshes/FirstPersonProjectileMesh.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.03.26-14.37.05:206][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
+[2016.03.26-14.37.05:206][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap.
+[2016.03.26-14.37.05:206][  0]LoadErrors:Error: Error /Game/FirstPersonBP/Maps/FirstPersonExampleMap : Can't find file for asset. /Game/FirstPersonBP/Blueprints/bodyMesh
+[2016.03.26-14.37.05:208][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
+[2016.03.26-14.37.05:208][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap.
+[2016.03.26-14.37.05:208][  0]LoadErrors:Error: Error /Game/FirstPersonBP/Maps/FirstPersonExampleMap : Can't find file for asset. /Game/FirstPersonBP/Blueprints/bodyMesh
+[2016.03.26-14.37.05:209][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
+[2016.03.26-14.37.05:209][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
+[2016.03.26-14.37.05:209][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
+[2016.03.26-14.37.05:209][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
+[2016.03.26-14.37.05:218][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
+[2016.03.26-14.37.05:218][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by FirstPersonCharacter_C_3
+[2016.03.26-14.37.05:218][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
+[2016.03.26-14.37.05:218][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by FirstPersonCharacter_C_3
+[2016.03.26-14.37.05:219][  0]LogLinker:Warning: Can't find file '/Game/FirstPersonBP/Blueprints/bodyMesh'
+[2016.03.26-14.37.05:219][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by Player1
+[2016.03.26-14.37.05:219][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPersonBP/Blueprints/bodyMesh' while loading NULL.
+[2016.03.26-14.37.05:219][  0]LoadErrors: Info Failed to load /Game/FirstPersonBP/Blueprints/bodyMesh.bodyMesh Referenced by Player1
+[2016.03.26-14.37.05:377][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.26-14.37.05:384][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.26-14.37.05:384][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.26-14.37.05:422][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 38.348ms to complete.
+[2016.03.26-14.37.05:422][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.556
+[2016.03.26-14.37.05:531][  0]LogCollectionManager: Loaded 0 collections in 0.001792 seconds
+[2016.03.26-14.37.05:569][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/Collections/' took 0.01s
+[2016.03.26-14.37.05:569][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Developers/WaxChugdaGwad/Collections/' took 0.01s
+[2016.03.26-14.37.05:569][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Collections/' took 0.01s
+[2016.03.26-14.37.05:569][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.03.26-14.37.05:575][  0]LogContentBrowser: Native class hierarchy populated in 0.0057 seconds. Added 1893 classes and 338 folders.
+[2016.03.26-14.37.05:580][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.03.26-14.37.05:613][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.03.26-14.37.05:617][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.03.26-14.37.05:633][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.03.26-14.37.05:637][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.03.26-14.37.05:658][  0]LogLoad: Full Startup: 4.33 seconds (BP compile: 0.13 seconds)
+[2016.03.26-14.37.05:670][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.37.05:670][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.37.05:675][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.26-14.37.05:730][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.03.26-14.37.05:853][  0]LogRenderer: Reallocating scene render targets to support 1208x572 (Frame:2).
+[2016.03.26-14.37.06:087][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/' took 0.40s
+[2016.03.26-14.37.07:154][105]LogAssetRegistry: Asset discovery search completed in 3.1340 seconds
+[2016.03.26-14.37.07:154][105]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.03.26-14.37.07:154][105]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000018 seconds (updated 0 objects)
+[2016.03.26-14.37.08:687][285]AssetReimport: New page: Outstanding source content changes 12:37:08 AM
+[2016.03.26-14.37.54:047][ 78]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsMesh.fbx)
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: NodeAttribute, ItemCount : 11
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Model, ItemCount : 15
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Geometry, ItemCount : 4
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Material, ItemCount : 1
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: AnimationCurveNode, ItemCount : 9
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Pose, ItemCount : 4
+[2016.03.26-14.37.54:062][ 78]LogFbx: ItemName: Deformer, ItemCount : 8
+[2016.03.26-14.37.54:123][ 78]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsMesh.fbx
+[2016.03.26-14.37.54:229][ 78]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.37.59:754][ 78]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsMesh.fbx
+[2016.03.26-14.37.59:857][ 78]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node START [nurbsToPoly1] 
+[2016.03.26-14.37.59:882][ 78]LogFbx: 	Total Deformer Count -691403616.
+[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:882][ 78]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly1 (Type Mesh).
+[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node END [nurbsToPoly1]
+[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node START [nurbsToPoly2] 
+[2016.03.26-14.37.59:882][ 78]LogFbx: 	Total Deformer Count -691403616.
+[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:882][ 78]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly2 (Type Mesh).
+[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node END [nurbsToPoly2]
+[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node START [nurbsToPoly3] 
+[2016.03.26-14.37.59:882][ 78]LogFbx: 	Total Deformer Count -691403616.
+[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:882][ 78]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly3 (Type Mesh).
+[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node END [nurbsToPoly3]
+[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:882][ 78]LogFbx: Dumping Node START [nurbsToPoly4] 
+[2016.03.26-14.37.59:882][ 78]LogFbx: 	Total Deformer Count -691403616.
+[2016.03.26-14.37.59:882][ 78]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.37.59:882][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:882][ 78]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly4 (Type Mesh).
+[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly4]
+[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node START [nurbsToPoly1] 
+[2016.03.26-14.37.59:883][ 78]LogFbx: 	Total Deformer Count -691403616.
+[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:883][ 78]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly1 (Type Mesh).
+[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly1]
+[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node START [nurbsToPoly2] 
+[2016.03.26-14.37.59:883][ 78]LogFbx: 	Total Deformer Count -691403616.
+[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:883][ 78]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly2 (Type Mesh).
+[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly2]
+[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node START [nurbsToPoly3] 
+[2016.03.26-14.37.59:883][ 78]LogFbx: 	Total Deformer Count -691403616.
+[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:883][ 78]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly3 (Type Mesh).
+[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly3]
+[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node START [nurbsToPoly4] 
+[2016.03.26-14.37.59:883][ 78]LogFbx: 	Total Deformer Count -691403616.
+[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.37.59:883][ 78]LogFbx: =================================================
+[2016.03.26-14.37.59:883][ 78]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.37.59:883][ 78]LogFbx: 		[Node Attribute Child 1] nurbsToPoly4 (Type Mesh).
+[2016.03.26-14.37.59:883][ 78]LogFbx: Dumping Node END [nurbsToPoly4]
+[2016.03.26-14.37.59:886][ 78]LogFbx: Valid bind pose for Pose (skinCluster1) - nurbsToPoly1
+[2016.03.26-14.37.59:887][ 78]LogFbx: Valid bind pose for Pose (skinCluster2) - nurbsToPoly1
+[2016.03.26-14.37.59:887][ 78]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly1 : The relative matrices do not match
+[2016.03.26-14.37.59:887][ 78]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly2 : The relative matrices do not match
+[2016.03.26-14.37.59:887][ 78]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly3 : The relative matrices do not match
+[2016.03.26-14.37.59:887][ 78]LogFbx:Warning: Not valid bind pose for Pose (skinCluster3) - Node nurbsToPoly4 : The relative matrices do not match
+[2016.03.26-14.37.59:887][ 78]LogFbx: Valid bind pose for Pose (skinCluster4) - nurbsToPoly1
+[2016.03.26-14.37.59:891][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/lambert1'
+[2016.03.26-14.37.59:891][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/lambert1'
+[2016.03.26-14.37.59:895][ 78]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2016.03.26-14.37.59:927][ 78]LogFbx:Warning: Bones digested - 9  Depth of hierarchy - 6
+[2016.03.26-14.37.59:937][ 78]LogSkeletalMesh: Chunk 0: 1068 rigid vertices, 0 soft vertices, 4 active bones
+[2016.03.26-14.37.59:939][ 78]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 1680 triangles
+[2016.03.26-14.37.59:941][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsMesh_PhysicsAsset'
+[2016.03.26-14.37.59:941][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsMesh_PhysicsAsset'
+[2016.03.26-14.37.59:941][ 78]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/armsMesh_PhysicsAsset.armsMesh_PhysicsAsset'
+[2016.03.26-14.38.00:016][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsMesh_Skeleton'
+[2016.03.26-14.38.00:016][ 78]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsMesh_Skeleton'
+[2016.03.26-14.38.00:016][ 78]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/armsMesh_Skeleton.armsMesh_Skeleton'
+[2016.03.26-14.38.00:020][ 78]FBXImport:Warning: Warning The following bones are missing from the bind pose:
+joint11  
+joint21  
+joint22  
+
+This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
+please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
+[2016.03.26-14.38.00:021][ 78]FBXImport:Warning: Warning The bone size is too small to create Physics Asset 'armsMesh_PhysicsAsset' from Skeletal Mesh 'armsMesh'. You will have to create physics asset manually. 
+[2016.03.26-14.38.00:049][ 79]LogMaterial:Warning: Material /Game/Assets/Characters/Kappa/lambert1.lambert1 needed to have new flag set bUsedWithSkeletalMesh !
+[2016.03.26-14.38.00:064][ 79]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2016.03.26-14.38.00:073][ 79]LogMaterial: 0.000031 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-14.38.17:027][ 77]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsIdleAnim.fbx)
+[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: NodeAttribute, ItemCount : 9
+[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: Model, ItemCount : 9
+[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: AnimationCurveNode, ItemCount : 37
+[2016.03.26-14.38.17:035][ 77]LogFbx: ItemName: AnimationCurve, ItemCount : 70
+[2016.03.26-14.38.17:095][ 77]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsIdleAnim.fbx
+[2016.03.26-14.38.17:206][ 77]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.38.22:132][ 77]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsIdleAnim.fbx
+[2016.03.26-14.38.22:245][ 77]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(3) joint9
+[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(4) joint10
+[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(5) joint11
+[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(6) joint12
+[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(7) joint21
+[2016.03.26-14.38.22:272][ 77]LogFbx: SortedLinks :(8) joint22
+[2016.03.26-14.38.22:273][ 77]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-14.38.22:375][ 77]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsIdleAnim'
+[2016.03.26-14.38.22:376][ 77]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsIdleAnim'
+[2016.03.26-14.38.22:376][ 77]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/armsIdleAnim.armsIdleAnim'
+[2016.03.26-14.38.31:760][308]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsThrow.fbx)
+[2016.03.26-14.38.31:770][308]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.38.31:770][308]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.38.31:770][308]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.38.31:770][308]LogFbx: ItemName: NodeAttribute, ItemCount : 9
+[2016.03.26-14.38.31:770][308]LogFbx: ItemName: Model, ItemCount : 9
+[2016.03.26-14.38.31:770][308]LogFbx: ItemName: AnimationCurveNode, ItemCount : 25
+[2016.03.26-14.38.31:770][308]LogFbx: ItemName: AnimationCurve, ItemCount : 40
+[2016.03.26-14.38.31:827][308]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsThrow.fbx
+[2016.03.26-14.38.31:927][308]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.38.36:109][308]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/armsThrow.fbx
+[2016.03.26-14.38.36:206][308]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(3) joint9
+[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(4) joint10
+[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(5) joint11
+[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(6) joint12
+[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(7) joint21
+[2016.03.26-14.38.36:231][308]LogFbx: SortedLinks :(8) joint22
+[2016.03.26-14.38.36:231][308]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-14.38.36:256][308]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsThrow'
+[2016.03.26-14.38.36:256][308]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/armsThrow'
+[2016.03.26-14.38.36:256][308]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/armsThrow.armsThrow'
+[2016.03.26-14.38.41:640][493]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.03.26-14.38.50:861][895]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMesh.fbx)
+[2016.03.26-14.38.50:869][895]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.38.50:869][895]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.38.50:869][895]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.38.50:869][895]LogFbx: ItemName: NodeAttribute, ItemCount : 9
+[2016.03.26-14.38.50:869][895]LogFbx: ItemName: Model, ItemCount : 10
+[2016.03.26-14.38.50:869][895]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.03.26-14.38.50:869][895]LogFbx: ItemName: Material, ItemCount : 1
+[2016.03.26-14.38.50:869][895]LogFbx: ItemName: AnimationCurveNode, ItemCount : 7
+[2016.03.26-14.38.50:870][895]LogFbx: ItemName: Pose, ItemCount : 1
+[2016.03.26-14.38.50:870][895]LogFbx: ItemName: Deformer, ItemCount : 5
+[2016.03.26-14.38.50:929][895]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMesh.fbx
+[2016.03.26-14.38.51:023][895]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.38.56:195][895]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMesh.fbx
+[2016.03.26-14.38.56:289][895]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.38.56:313][895]LogFbx: =================================================
+[2016.03.26-14.38.56:313][895]LogFbx: Dumping Node START [nurbsToPoly6] 
+[2016.03.26-14.38.56:313][895]LogFbx: 	Total Deformer Count -1738302768.
+[2016.03.26-14.38.56:313][895]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.38.56:313][895]LogFbx: =================================================
+[2016.03.26-14.38.56:313][895]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.38.56:313][895]LogFbx: 		[Node Attribute Child 1] nurbsToPoly6 (Type Mesh).
+[2016.03.26-14.38.56:313][895]LogFbx: Dumping Node END [nurbsToPoly6]
+[2016.03.26-14.38.56:313][895]LogFbx: =================================================
+[2016.03.26-14.38.56:313][895]LogFbx: Dumping Node START [nurbsToPoly6] 
+[2016.03.26-14.38.56:313][895]LogFbx: 	Total Deformer Count -1738302768.
+[2016.03.26-14.38.56:313][895]LogFbx: 		[Node 1]  (Type Skin).
+[2016.03.26-14.38.56:313][895]LogFbx: =================================================
+[2016.03.26-14.38.56:313][895]LogFbx: 	Attribute () Type (4).
+[2016.03.26-14.38.56:313][895]LogFbx: 		[Node Attribute Child 1] nurbsToPoly6 (Type Mesh).
+[2016.03.26-14.38.56:313][895]LogFbx: Dumping Node END [nurbsToPoly6]
+[2016.03.26-14.38.56:315][895]LogFbx:Warning: Not valid bind pose for Pose (skinCluster1) - Node nurbsToPoly6 : The relative matrices do not match
+[2016.03.26-14.38.56:315][895]LogFbx:Warning: Getting valid bind pose failed. Try to recreate bind pose
+[2016.03.26-14.38.56:316][895]LogFbx: Valid bind pose for Pose (FbxSDKBindPose) - nurbsToPoly6
+[2016.03.26-14.38.56:316][895]LogFbx:Warning: Recreating bind pose succeeded.
+[2016.03.26-14.38.56:328][895]LogFbx:Warning: Bones digested - 7  Depth of hierarchy - 3
+[2016.03.26-14.38.56:335][895]LogSkeletalMesh: Chunk 0: 833 rigid vertices, 0 soft vertices, 4 active bones
+[2016.03.26-14.38.56:336][895]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 1320 triangles
+[2016.03.26-14.38.56:337][895]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMesh_PhysicsAsset'
+[2016.03.26-14.38.56:337][895]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMesh_PhysicsAsset'
+[2016.03.26-14.38.56:337][895]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyMesh_PhysicsAsset.bodyMesh_PhysicsAsset'
+[2016.03.26-14.38.56:339][895]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMesh_Skeleton'
+[2016.03.26-14.38.56:339][895]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMesh_Skeleton'
+[2016.03.26-14.38.56:339][895]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyMesh_Skeleton.bodyMesh_Skeleton'
+[2016.03.26-14.38.56:342][895]FBXImport:Warning: Warning The following bones are missing from the bind pose:
+joint3  
+joint20  
+joint19  
+
+This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
+please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
+[2016.03.26-14.39.08:647][200]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyDeathAnim.fbx)
+[2016.03.26-14.39.08:654][200]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.39.08:654][200]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.39.08:654][200]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.39.08:654][200]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-14.39.08:654][200]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-14.39.08:654][200]LogFbx: ItemName: AnimationCurveNode, ItemCount : 19
+[2016.03.26-14.39.08:654][200]LogFbx: ItemName: AnimationCurve, ItemCount : 30
+[2016.03.26-14.39.08:712][200]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyDeathAnim.fbx
+[2016.03.26-14.39.08:796][200]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.39.24:239][200]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyDeathAnim.fbx
+[2016.03.26-14.39.24:326][200]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-14.39.24:351][200]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-14.39.24:351][200]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-14.39.24:363][200]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyDeathAnim'
+[2016.03.26-14.39.24:363][200]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyDeathAnim'
+[2016.03.26-14.39.24:363][200]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyDeathAnim.bodyDeathAnim'
+[2016.03.26-14.39.30:694][313]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyFallingAnim.fbx)
+[2016.03.26-14.39.30:703][313]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.39.30:703][313]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.39.30:703][313]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.39.30:703][313]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-14.39.30:703][313]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-14.39.30:703][313]LogFbx: ItemName: AnimationCurveNode, ItemCount : 23
+[2016.03.26-14.39.30:703][313]LogFbx: ItemName: AnimationCurve, ItemCount : 40
+[2016.03.26-14.39.30:762][313]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyFallingAnim.fbx
+[2016.03.26-14.39.30:853][313]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.39.40:217][313]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyFallingAnim.fbx
+[2016.03.26-14.39.40:307][313]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-14.39.40:332][313]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-14.39.40:332][313]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-14.39.40:349][313]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyFallingAnim'
+[2016.03.26-14.39.40:349][313]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyFallingAnim'
+[2016.03.26-14.39.40:349][313]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyFallingAnim.bodyFallingAnim'
+[2016.03.26-14.39.49:814][531]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyIdleAnim.fbx)
+[2016.03.26-14.39.49:822][531]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.39.49:822][531]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.39.49:822][531]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.39.49:822][531]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-14.39.49:822][531]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-14.39.49:822][531]LogFbx: ItemName: AnimationCurveNode, ItemCount : 27
+[2016.03.26-14.39.49:822][531]LogFbx: ItemName: AnimationCurve, ItemCount : 50
+[2016.03.26-14.39.49:882][531]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyIdleAnim.fbx
+[2016.03.26-14.39.49:979][531]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.39.54:062][531]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyIdleAnim.fbx
+[2016.03.26-14.39.54:161][531]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-14.39.54:185][531]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-14.39.54:185][531]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-14.39.54:256][531]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyIdleAnim'
+[2016.03.26-14.39.54:256][531]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyIdleAnim'
+[2016.03.26-14.39.54:257][531]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyIdleAnim.bodyIdleAnim'
+[2016.03.26-14.40.07:998][ 48]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyJumpAnim.fbx)
+[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: AnimationCurveNode, ItemCount : 23
+[2016.03.26-14.40.08:007][ 48]LogFbx: ItemName: AnimationCurve, ItemCount : 40
+[2016.03.26-14.40.08:066][ 48]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyJumpAnim.fbx
+[2016.03.26-14.40.08:156][ 48]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.40.13:123][ 48]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyJumpAnim.fbx
+[2016.03.26-14.40.13:214][ 48]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-14.40.13:238][ 48]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-14.40.13:238][ 48]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-14.40.13:250][ 48]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyJumpAnim'
+[2016.03.26-14.40.13:250][ 48]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyJumpAnim'
+[2016.03.26-14.40.13:250][ 48]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyJumpAnim.bodyJumpAnim'
+[2016.03.26-14.40.26:632][813]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMoveAnim.fbx)
+[2016.03.26-14.40.26:640][813]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.40.26:640][813]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.40.26:640][813]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.40.26:640][813]LogFbx: ItemName: NodeAttribute, ItemCount : 7
+[2016.03.26-14.40.26:640][813]LogFbx: ItemName: Model, ItemCount : 7
+[2016.03.26-14.40.26:640][813]LogFbx: ItemName: AnimationCurveNode, ItemCount : 23
+[2016.03.26-14.40.26:640][813]LogFbx: ItemName: AnimationCurve, ItemCount : 40
+[2016.03.26-14.40.26:698][813]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMoveAnim.fbx
+[2016.03.26-14.40.26:795][813]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.40.33:547][813]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/bodyMoveAnim.fbx
+[2016.03.26-14.40.33:641][813]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(0) joint1
+[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(1) joint2
+[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(2) joint3
+[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(3) joint7
+[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(4) joint20
+[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(5) joint18
+[2016.03.26-14.40.33:664][813]LogFbx: SortedLinks :(6) joint19
+[2016.03.26-14.40.33:665][813]LogFbx: Parsing AnimStack Take 001
+[2016.03.26-14.40.33:682][813]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMoveAnim'
+[2016.03.26-14.40.33:682][813]LogLinker:Warning: Can't find file '/Game/Assets/Characters/Kappa/bodyMoveAnim'
+[2016.03.26-14.40.33:682][813]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/Assets/Characters/Kappa/bodyMoveAnim.bodyMoveAnim'
+[2016.03.26-14.40.42:713][ 50]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/kappaHead.png)
+[2016.03.26-14.40.42:738][ 50]LogTexture:Display: Building textures: kappaHead (BGRA8)
+[2016.03.26-14.40.48:844][217]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9A7D18A0
+[2016.03.26-14.40.48:845][217]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9D0B1E40
+[2016.03.26-14.40.48:845][217]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFD6705940
+[2016.03.26-14.40.48:851][217]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFD6705580
+[2016.03.26-14.40.50:491][217]LogSavePackage: Save=1558.377686ms
+[2016.03.26-14.40.50:491][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/FirstPersonExampleMapD64C1F1644FE024C28245A82DC3ECF68.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2016.03.26-14.40.50:495][217]LogSavePackage: Total save time: 1578.377787ms
+[2016.03.26-14.40.50:495][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
+[2016.03.26-14.40.50:656][217]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 1.793
+[2016.03.26-14.40.50:688][217]LogSavePackage: Save=11.651977ms
+[2016.03.26-14.40.50:688][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/armsIdleAnimB7615CDE43E8C25DB0C29AAD54826421.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsIdleAnim.uasset'
+[2016.03.26-14.40.50:690][217]LogSavePackage: Total save time: 13.458189ms
+[2016.03.26-14.40.50:690][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsIdleAnim.uasset
+[2016.03.26-14.40.50:720][217]LogSavePackage: Save=11.023169ms
+[2016.03.26-14.40.50:720][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/armsMesh95A9D33443749E7273E3E58A8EABB366.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsMesh.uasset'
+[2016.03.26-14.40.50:722][217]LogSavePackage: Total save time: 13.082895ms
+[2016.03.26-14.40.50:722][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsMesh.uasset
+[2016.03.26-14.40.50:752][217]LogSavePackage: Save=11.563861ms
+[2016.03.26-14.40.50:752][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/lambert1FC0CF13848FC4BF52CEE259D89292200.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/lambert1.uasset'
+[2016.03.26-14.40.50:754][217]LogSavePackage: Total save time: 13.112169ms
+[2016.03.26-14.40.50:754][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/lambert1.uasset
+[2016.03.26-14.40.50:762][217]LogSavePackage: Save=2.983618ms
+[2016.03.26-14.40.50:762][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/armsMesh_SkeletonCAA98B704EA0A2FD4D4C528CBAC32F97.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsMesh_Skeleton.uasset'
+[2016.03.26-14.40.50:763][217]LogSavePackage: Total save time: 4.615944ms
+[2016.03.26-14.40.50:763][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsMesh_Skeleton.uasset
+[2016.03.26-14.40.50:791][217]LogSavePackage: Save=10.147579ms
+[2016.03.26-14.40.50:791][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/armsThrowA51EAE3B45600B3B1D49579E4E755A0F.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsThrow.uasset'
+[2016.03.26-14.40.50:792][217]LogSavePackage: Total save time: 11.691790ms
+[2016.03.26-14.40.50:792][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/armsThrow.uasset
+[2016.03.26-14.40.50:821][217]LogSavePackage: Save=11.158122ms
+[2016.03.26-14.40.50:821][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyMeshAB694D734F2050FCDB1B3EBA15EF8B79.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh.uasset'
+[2016.03.26-14.40.50:822][217]LogSavePackage: Total save time: 12.799229ms
+[2016.03.26-14.40.50:822][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh.uasset
+[2016.03.26-14.40.50:831][217]LogSavePackage: Save=3.720155ms
+[2016.03.26-14.40.50:831][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyMesh_PhysicsAsset9B9EAC264C7706D6D324B8BE44412328.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh_PhysicsAsset.uasset'
+[2016.03.26-14.40.50:832][217]LogSavePackage: Total save time: 5.257338ms
+[2016.03.26-14.40.50:832][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh_PhysicsAsset.uasset
+[2016.03.26-14.40.50:840][217]LogSavePackage: Save=3.123255ms
+[2016.03.26-14.40.50:840][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyMesh_Skeleton337C8DBD46F2B5C9C9498B8B771921D6.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh_Skeleton.uasset'
+[2016.03.26-14.40.50:841][217]LogSavePackage: Total save time: 4.752066ms
+[2016.03.26-14.40.50:841][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMesh_Skeleton.uasset
+[2016.03.26-14.40.50:856][217]LogSavePackage: Save=6.391710ms
+[2016.03.26-14.40.50:856][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyDeathAnimB35B651744FED4C71546E8B83D4FE226.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyDeathAnim.uasset'
+[2016.03.26-14.40.50:860][217]LogSavePackage: Total save time: 9.729546ms
+[2016.03.26-14.40.50:860][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyDeathAnim.uasset
+[2016.03.26-14.40.50:920][217]LogSavePackage: Save=44.912056ms
+[2016.03.26-14.40.50:920][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyFallingAnim726E815049360396749676AA825C45A3.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyFallingAnim.uasset'
+[2016.03.26-14.40.50:926][217]LogSavePackage: Total save time: 51.126949ms
+[2016.03.26-14.40.50:926][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyFallingAnim.uasset
+[2016.03.26-14.40.50:940][217]LogSavePackage: Save=6.102190ms
+[2016.03.26-14.40.50:941][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyIdleAnimF70068FD468603A4B6AD12949C93EFFA.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyIdleAnim.uasset'
+[2016.03.26-14.40.50:942][217]LogSavePackage: Total save time: 7.607173ms
+[2016.03.26-14.40.50:942][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyIdleAnim.uasset
+[2016.03.26-14.40.50:966][217]LogSavePackage: Save=6.099848ms
+[2016.03.26-14.40.50:966][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyJumpAnim456756F14D2850068EFA13A79D91454A.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyJumpAnim.uasset'
+[2016.03.26-14.40.50:969][217]LogSavePackage: Total save time: 9.594005ms
+[2016.03.26-14.40.50:969][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyJumpAnim.uasset
+[2016.03.26-14.40.50:991][217]LogSavePackage: Save=6.181522ms
+[2016.03.26-14.40.50:991][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/bodyMoveAnim8E6DE3D74AA2C47A8801D98037D84FFE.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMoveAnim.uasset'
+[2016.03.26-14.40.50:995][217]LogSavePackage: Total save time: 10.281362ms
+[2016.03.26-14.40.50:995][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/bodyMoveAnim.uasset
+[2016.03.26-14.40.51:061][217]LogSavePackage: Save=50.472088ms
+[2016.03.26-14.40.51:061][217]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/kappaHeadB4F76ACE45F3017B67AFA2BE241B1978.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHead.uasset'
+[2016.03.26-14.40.51:063][217]LogSavePackage: Total save time: 52.228831ms
+[2016.03.26-14.40.51:063][217]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHead.uasset
+[2016.03.26-14.42.25:157][522]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-14.42.25:195][522]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-14.42.25:198][522]LogMaterial: 0.000081 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-14.42.28:205][606]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2016.03.26-14.42.28:205][606]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2016.03.26-14.42.28:205][606]MaterialEditorStats: Info Texture samplers: 0/16
+[2016.03.26-14.42.31:754][851]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-14.42.31:757][851]LogMaterial: 0.000119 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-14.42.31:758][851]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2016.03.26-14.42.31:787][851]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2016.03.26-14.42.32:656][938]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 31 instructions
+[2016.03.26-14.42.32:657][938]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2016.03.26-14.42.32:657][938]MaterialEditorStats: Info Texture samplers: 0/16
+[2016.03.26-14.42.35:833][293]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-14.42.35:837][293]LogMaterial: 0.000096 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-14.42.35:866][293]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2016.03.26-14.42.36:849][386]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 32 instructions
+[2016.03.26-14.42.36:849][386]MaterialEditorStats: Info Vertex shader: 33 instructions
+[2016.03.26-14.42.36:849][386]MaterialEditorStats: Info Texture samplers: 1/16
+[2016.03.26-14.42.46:211][250]LogSavePackage: Save=12.078208ms
+[2016.03.26-14.42.46:211][250]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/kappaHeadMat605BBC7348F3E7C0FD2E2D9A6ED9869C.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHeadMat.uasset'
+[2016.03.26-14.42.46:214][250]LogSavePackage: Total save time: 15.310947ms
+[2016.03.26-14.42.46:214][250]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHeadMat.uasset
+[2016.03.26-14.42.58:066][682]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-14.42.58:075][682]LogMaterial: 0.000087 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-14.42.58:086][682]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-14.42.58:095][682]LogMaterial: Missing cached shader map for material kappaHeadMat, compiling. 
+[2016.03.26-14.42.58:100][682]LogMaterial: 0.000540 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.03.26-14.43.05:301][ 96]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx)
+[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: Material, ItemCount : 1
+[2016.03.26-14.43.05:308][ 96]LogFbx: ItemName: Model, ItemCount : 1
+[2016.03.26-14.43.05:368][ 96]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx
+[2016.03.26-14.43.05:436][ 96]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.43.09:557][ 96]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx
+[2016.03.26-14.43.09:626][ 96]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.43.09:652][ 96]LogStaticMesh: Building static mesh head...
+[2016.03.26-14.43.09:661][ 96]LogStaticMesh: Built static mesh [0.008582.2s] /Game/Assets/Characters/Kappa/head.head
+[2016.03.26-14.43.09:666][ 96]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2016.03.26-14.43.13:545][525]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFA3920720
+[2016.03.26-14.43.17:551][636]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx)
+[2016.03.26-14.43.17:558][636]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.03.26-14.43.17:558][636]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.03.26-14.43.17:558][636]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.03.26-14.43.17:558][636]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.03.26-14.43.17:558][636]LogFbx: ItemName: Material, ItemCount : 1
+[2016.03.26-14.43.17:558][636]LogFbx: ItemName: Model, ItemCount : 1
+[2016.03.26-14.43.17:616][636]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx
+[2016.03.26-14.43.17:683][636]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.43.19:746][636]LogFbx: Loading FBX Scene from ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/Assets/head.fbx
+[2016.03.26-14.43.19:814][636]LogFbx: FBX Scene Loaded Succesfully
+[2016.03.26-14.43.19:840][636]LogStaticMesh: Building static mesh head...
+[2016.03.26-14.43.19:847][636]LogStaticMesh: Built static mesh [0.007015.2s] /Game/Assets/Characters/Kappa/head.head
+[2016.03.26-14.43.21:132][733]LogActorFactory: Actor Factory created head
+[2016.03.26-14.43.24:134][ 92]LogActorFactory: Actor Factory created head
+[2016.03.26-14.43.26:356][301]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (head)
+[2016.03.26-14.43.45:702][274]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (head)
+[2016.03.26-14.43.50:398][809]Cmd: DELETE
+[2016.03.26-14.43.50:398][809]Cmd: ACTOR DELETE
+[2016.03.26-14.43.50:398][809]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.03.26-14.43.50:407][809]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2016.03.26-14.43.53:060][929]LogSavePackage: Save=1274.049072ms
+[2016.03.26-14.43.53:060][929]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/FirstPersonExampleMap9724B3384826A344D35A6EB0686C1D1C.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2016.03.26-14.43.53:063][929]LogSavePackage: Total save time: 1278.837714ms
+[2016.03.26-14.43.53:064][929]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
+[2016.03.26-14.43.53:089][929]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 1.359
+[2016.03.26-14.43.53:123][929]LogSavePackage: Save=11.498580ms
+[2016.03.26-14.43.53:123][929]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/kappaHeadMat90D7F26640EB1AAF907C4A9CD2701E0E.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHeadMat.uasset'
+[2016.03.26-14.43.53:125][929]LogSavePackage: Total save time: 17.722841ms
+[2016.03.26-14.43.53:125][929]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/kappaHeadMat.uasset
+[2016.03.26-14.43.53:141][929]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Characters/Kappa/head" FILE="../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/head.uasset" SILENT=true
+[2016.03.26-14.43.53:154][929]LogSavePackage: Save=12.461699ms
+[2016.03.26-14.43.53:154][929]LogSavePackage: Moving '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Saved/headA372386E437A7FC31CEE5DB135FD32D7.tmp' to '../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/head.uasset'
+[2016.03.26-14.43.53:161][929]LogSavePackage: Total save time: 19.255634ms
+[2016.03.26-14.43.53:161][929]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Wax Chug da Gwad/Desktop/killer-self3/KillerSelf/Content/Assets/Characters/Kappa/head.uasset
+[2016.03.26-14.43.54:866][125]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.43.54:867][125]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.43.54:877][125]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.43.54:877][125]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.43.55:069][126]Cmd: QUIT_EDITOR
+[2016.03.26-14.43.55:188][126]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.43.55:188][126]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.03.26-14.43.55:243][126]LogExit: Preparing to exit.
+[2016.03.26-14.43.56:120][126]LogExit: Editor shut down
+[2016.03.26-14.43.56:120][126]LogExit: Transaction tracking system shut down
+[2016.03.26-14.43.56:122][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF98CDA340
+[2016.03.26-14.43.56:123][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9AE46C00
+[2016.03.26-14.43.56:123][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9A7F4F40
+[2016.03.26-14.43.56:123][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFB34D84A0
+[2016.03.26-14.43.56:123][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AF9A7F5440
+[2016.03.26-14.43.56:325][126]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001AFB9E34CC0
+[2016.03.26-14.43.56:325][126]LogExit: Object subsystem successfully closed.
+[2016.03.26-14.43.56:333][126]LogD3D11RHI: Shutdown
+[2016.03.26-14.43.56:333][126]LogD3D11RHI: CleanupD3DDevice
+[2016.03.26-14.43.56:387][126]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module MaterialEditor (200)
+[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module CookingStats (199)
+[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
+[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
+[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
+[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
+[2016.03.26-14.43.56:397][126]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module BspMode (185)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
+[2016.03.26-14.43.56:399][126]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
+[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
+[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
+[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
+[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module MergeActors (169)
+[2016.03.26-14.43.56:853][126]LogModuleManager: Shutting down and abandoning module SizeMap (168)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module TreeMap (167)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module XmlParser (158)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Blutility (157)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AutomationController (146)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Layers (144)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Persona (140)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Kismet (139)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Toolbox (136)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module OutputLog (133)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GammaUI (132)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Documentation (131)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module Analytics (127)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module AIModule (124)
+[2016.03.26-14.43.56:859][126]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
+[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
+[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
+[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
+[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module SteamVR (119)
+[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
+[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
+[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module OculusInput (116)
+[2016.03.26-14.43.56:993][126]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
+[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
+[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module CableComponent (113)
+[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
+[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
+[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
+[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
+[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
+[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
+[2016.03.26-14.43.57:004][126]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module SourceControl (100)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module HotReload (93)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module MainFrame (92)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
+[2016.03.26-14.43.57:005][126]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
+[2016.03.26-14.43.57:007][126]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
+[2016.03.26-14.43.57:090][126]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
+[2016.03.26-14.43.57:090][126]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
+[2016.03.26-14.43.57:090][126]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
+[2016.03.26-14.43.57:191][126]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
+[2016.03.26-14.43.57:191][126]LogModuleManager: Shutting down and abandoning module Paper2D (84)
+[2016.03.26-14.43.57:191][126]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module Media (82)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module MessageLog (73)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module Sequencer (72)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module AssetTools (71)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module UMG (69)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module Slate (68)
+[2016.03.26-14.43.57:197][126]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module SessionServices (66)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module Networking (61)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module Core (60)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
+[2016.03.26-14.43.57:199][126]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
+[2016.03.26-14.43.57:296][126]LogDerivedDataCache: Shutdown
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.03.26-14.43.57:296][126]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.03.26-14.43.58:297][126]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.03.26-14.43.58:298][126]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.03.26-14.43.58:300][126]LogExit: Exiting.
+[2016.03.26-14.43.58:310][126]Log file closed, 03/26/16 07:43:58
