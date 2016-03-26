@@ -4182,4 +4182,32 @@
 [2016.03.26-18.01.20:814][531]PIE:Warning: Warning FirstPersonHUD_C_1 Canvas Draw functions may only be called during the handling of the DrawHUD event
 [2016.03.26-18.01.21:146][532]PIE:Warning: Warning FirstPersonHUD_C_1 Canvas Draw functions may only be called during the handling of the DrawHUD event
 [2016.03.26-18.01.21:146][532]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
-[2016.03.26-18.01.21:213][532]LogBlueprintUserMessages: Late EndPlayMap Detect
+[2016.03.26-18.01.21:213][532]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.03.26-18.01.21:240][532]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000273067707C0
+[2016.03.26-18.02.07:568][111]LogSavePackage: Save=1511.458618ms
+[2016.03.26-18.02.07:568][111]LogSavePackage: Moving '../../../../../../Users/Jett/Coding/KillerSelf/KillerSelf/Saved/FirstPersonExampleMap6C39BFC4408FB227D73C6D80C4B5A4D4.tmp' to '../../../../../../Users/Jett/Coding/KillerSelf/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2016.03.26-18.02.07:572][111]LogSavePackage: Total save time: 1534.078501ms
+[2016.03.26-18.02.07:572][111]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jett/Coding/KillerSelf/KillerSelf/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
+[2016.03.26-18.02.07:605][111]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 1.662
+[2016.03.26-18.02.07:629][111]LogSavePackage: Save=9.819952ms
+[2016.03.26-18.02.07:629][111]LogSavePackage: Moving '../../../../../../Users/Jett/Coding/KillerSelf/KillerSelf/Saved/FirstPersonGameMode3C929BF54FAB6F2A75D57A9BA4553FC7.tmp' to '../../../../../../Users/Jett/Coding/KillerSelf/KillerSelf/Content/FirstPersonBP/Blueprints/FirstPersonGameMode.uasset'
+[2016.03.26-18.02.07:631][111]LogSavePackage: Total save time: 18.495109ms
+[2016.03.26-18.02.07:631][111]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jett/Coding/KillerSelf/KillerSelf/Content/FirstPersonBP/Blueprints/FirstPersonGameMode.uasset
+[2016.03.26-18.03.41:254][553]AssetReimport: New page: Outstanding source content changes 4:03:41 AM
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley12.jpg as it's already imported by Barkley12.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley11.jpg as it's already imported by Barkley11.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley10.jpg as it's already imported by Barkley10.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley1.jpg as it's already imported by Barkley1.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley2.png as it's already imported by Barkley2.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley3.png as it's already imported by Barkley3.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley4.jpg as it's already imported by Barkley4.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley5.png as it's already imported by Barkley5.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley6.jpg as it's already imported by Barkley6.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley7.jpg as it's already imported by Barkley7.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley8.jpg as it's already imported by Barkley8.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file Barkley9.jpg as it's already imported by Barkley9.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file SD3-SentoIsuzu.png as it's already imported by SD3-SentoIsuzu.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file SD3-Tama.png as it's already imported by SD3-Tama.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file SD4-Megumin.png as it's already imported by SD4-Megumin.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file SD5-Kawakaze.png as it's already imported by SD5-Kawakaze.
+[2016.03.26-18.03.44:583][563]AssetReimport: Info Ignoring new file SandDunes3.png as it's already imported by SandDun
